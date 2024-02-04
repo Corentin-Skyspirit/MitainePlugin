@@ -1,0 +1,7 @@
+name: MitaineEconomy
+version: '1.0.0'
+main: io.papermc.mitaine.MitaineEconomy
+description: 'Mitaine Economy plugin'
+author: 'Skyspirit'
+api-version: '1.20'
+prefix: 'MitaineEconomy'
