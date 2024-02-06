@@ -26,7 +26,9 @@ public class Vote implements CommandExecutor {
                         bc.append("- " + i + " pour " + part + "\n");
                         i++;
                     }
-                    Bukkit.broadcastMessage("Un vote est en cours, faites §c/vote§f pour voter.\n" + bc);
+                    for (Player p : Bukkit.getOnlinePlayers()) {
+                        p.sendMessage("Un vote est en cours, faites §c/vote§f pour voter.\n" + bc);
+                    }
                 }
                 return true;
             }

@@ -1,11 +1,56 @@
 name: MitaineEconomy
 version: '1.0.0'
-main: io.papermc.mitaine.MitaineEconomy
+main: io.papermc.mitaine.MitaineMain
 description: Mitaine Economy plugin
 author: Skyspirit
 api-version: 1.20
-prefix: MitaineEconomy
+prefix: Mitaine
 commands:
   banque:
     description: Afficher la banque
     permission: banque.use
+  deposer:
+    description: Déposer des diamants
+    permission: deposer.use
+  retirer:
+    description: Retirer des diamants
+    permission: retirer.use
+  donner:
+    description: Donner a un joueur de l'argent
+    permission: donner.use
+  leaderboard:
+    description: Afficher la liste des plus riches
+    permission: leaderboard.use
+  achetericone:
+    description: Définit un icone à l'endroit du joueur sur la dynmap
+    permission: achetericone.use
+  courrier:
+    description: Permet une gestion des courriers
+    permission: courrier.use
+  vote:
+    description: Voter lors d'un vote
+    permission: vote.use
+  creervote:
+    description: Créer un vote
+    permission: creervote.use
+  resultats:
+    description: Afficher les résultats du dernier vote
+    permission: resultats.use
+  spawn:
+    description: Se téléporter au spawn
+    permission: spawn.use
+  setspawn:
+    description: Définir le point spawn
+    permission: setspawn.use
+  base:
+    description: Se téléporter à sa base
+    permission: base.use
+  setbase:
+    description: Définir le point base
+    permission: setbase.use
+  usine:
+    description: Se téléporter a une usine
+    permission: usine.use
+  setusine:
+    description: Définir le point usine
+    permission: setusine.use
