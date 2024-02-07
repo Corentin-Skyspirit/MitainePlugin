@@ -8,11 +8,7 @@ public final class MitaineMain extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
-        getCommand("banque").setExecutor(new Economie());
-        getCommand("retirer").setExecutor(new Economie());
-        getCommand("deposer").setExecutor(new Economie());
-        getCommand("donner").setExecutor(new Economie());
-        getCommand("leaderboard").setExecutor(new Economie());
+        getCommand("economie").setExecutor(new Economie());
         getCommand("achetericone").setExecutor(new Economie());
         getServer().getPluginManager().registerEvents(new Economie(), this);
 
@@ -25,10 +21,8 @@ public final class MitaineMain extends JavaPlugin {
 
         getCommand("spawn").setExecutor(new Teleport());
         getCommand("base").setExecutor(new Teleport());
-        getCommand("usine").setExecutor(new Teleport());
-        getCommand("setspawn").setExecutor(new Teleport());
-        getCommand("setbase").setExecutor(new Teleport());
-        getCommand("setusine").setExecutor(new Teleport());
+        getCommand("home").setExecutor(new Teleport());
+        getCommand("sethome").setExecutor(new Teleport());
     }
 
     @Override

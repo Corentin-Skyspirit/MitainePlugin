@@ -23,17 +23,20 @@ public class Economie implements CommandExecutor, Listener {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            if (cmd.getName().equalsIgnoreCase("banque")) {
-                player.sendMessage("Vous avez §c" + 64 + "§f diamants en banque.");
-                return true;
-            }
-            if (cmd.getName().equalsIgnoreCase("retirer")) {
-                if (args.length == 1) { //faire le test des diamants dispos
-                    int nb = Integer.parseInt(args[0]);
-                    player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
-                } else {
-                    player.sendMessage("§c La commande est : /retirer <nombre>");
+            if (cmd.getName().equalsIgnoreCase("economie")) {
+                if (args[0].equalsIgnoreCase("banque")) {
+                    player.sendMessage("Vous avez §c" + 64 + "§f diamants en banque.");
+                    return true;
                 }
+                if (args[0].equalsIgnoreCase("retirer")) {
+                    if (args.length == 2 && player.getInventory().firstEmpty() != -1) { //faire le test des diamants dispos
+                        int nb = Integer.parseInt(args[0]);
+                        player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
+                        return true;
+                    }
+                }
+            } else {
+                player.sendMessage("§c La commande est : /economie <option>");
             }
         }
         return false;
