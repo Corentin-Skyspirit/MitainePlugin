@@ -6,6 +6,18 @@
     "bypassesPlayerLimit": false
   },
   {
+    "uuid": "ad583e58-a368-4b56-acb6-f3c691f66061",
+    "name": "Hybanose",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "cf489c2f-48b1-43b3-82c1-f00024f4643c",
+    "name": "Hybanoze",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "820e66fe-2148-4b56-ae48-252a829a0927",
     "name": "Misterlol1590",
     "level": 4,
@@ -14,6 +26,12 @@
   {
     "uuid": "95f08a24-a484-4771-bf43-e3e2817b74f3",
     "name": "Skyspirit",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f3bb5e10-94da-4dda-88b0-595305de7a0e",
+    "name": "DuckIsTheBot",
     "level": 4,
     "bypassesPlayerLimit": false
   }
