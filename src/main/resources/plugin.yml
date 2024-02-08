@@ -1,4 +1,4 @@
-name: MitaineEconomy
+name: MitainePlugin
 version: '1.0.0'
 main: io.papermc.mitaine.MitaineMain
 description: Mitaine plugin

@@ -18,6 +18,10 @@ public class Courrier implements CommandExecutor, Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
+
+        if (cmd.getName().equalsIgnoreCase("courrier")) {
+            return true;
+        }
         return false;
     }
 }

@@ -29,14 +29,24 @@ public class Economie implements CommandExecutor, Listener {
                     return true;
                 }
                 if (args[0].equalsIgnoreCase("retirer")) {
-                    if (args.length == 2 && player.getInventory().firstEmpty() != -1) { //faire le test des diamants dispos
-                        int nb = Integer.parseInt(args[0]);
-                        player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
-                        return true;
+                    if (args.length != 2) {
+                        player.sendMessage("§cLa commande est /economie retirer <chiffre>");
                     }
+                    //faire le test des diamants dispos
+                    else if (player.getInventory().firstEmpty() == -1) {
+                        player.sendMessage("§cVous n'avez plus de place dans votre inventaire");
+                    } else {
+                        try {
+                            int nb = Integer.parseInt(args[1]); //pas clair qu'on sache si c'est un chiffre
+                            player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
+                            return true;
+                        } catch (NumberFormatException e) {
+                            player.sendMessage("§cVous devez entrer un chiffre en paramètre");
+                        }
+                    }
+                } else {
+                    player.sendMessage("§c La commande est : /economie <banque, retier, deposer, donner>");
                 }
-            } else {
-                player.sendMessage("§c La commande est : /economie <option>");
             }
         }
         return false;
