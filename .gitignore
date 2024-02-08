@@ -1,6 +1,4 @@
 
-*.lock
-*.bin
-.idea/modules/MitainePlugin.mitaine.main.iml
-.idea/modules.xml
-*.probe
+.gradle
+.idea
+.git
