@@ -9,14 +9,32 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
 import java.util.UUID;
 
 public class Courrier implements CommandExecutor, Listener {
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent join) {
+    public void onJoin(PlayerJoinEvent join) throws FileNotFoundException {
         Player player = join.getPlayer();
-        player.sendMessage("Bonjour, vous avez §c" + 0 + "§f message en attente.");
+        int nbMsg = 0;
+        File messages = new File("plugins/mitaine/messages.txt");
+        try {
+            Scanner sc = new Scanner(messages);
+            while (sc.hasNextLine()) {
+                System.out.println(sc.nextLine());
+                if (sc.nextLine().contains(player.getUniqueId().toString())) {
+                    nbMsg++;
+                }
+            }
+            player.sendMessage("[§6Mitaine§f] Bonjour, vous avez §c" + nbMsg + "§f message en attente.");
+        } catch (FileNotFoundException e) {
+            Bukkit.getLogger().info(player.getName() + "n'a pas de messages en attente");
+        }
     }
 
     @Override
@@ -38,11 +56,18 @@ public class Courrier implements CommandExecutor, Listener {
                         cpt++;
                     }
                     /*
-                    Écrire sur le message.yml les messages
+                    Écrire sur le message.yml les messages (ou txt parce que pas clair)
                     receiver -> UUID du mec qui reçoit le msg
-                    message -> message à stocker
                     sender -> player qui envoie le message (récup le nom)
+                    message -> message à stocker
                     */
+                    try {
+                        FileWriter courriers = new FileWriter("plugins/mitaine/messages.txt");
+                        courriers.write(reciever + " " + sender.getName() + " " + message + "\n");
+                        courriers.close();
+                    } catch (IOException e) {
+                        Bukkit.getLogger().info("Il y a eu une erreur dans la création du fichier messages.txt");
+                    }
                     Bukkit.getPlayer(reciever).sendMessage("Vous avez reçu un message !");
                 } else {
                     sender.sendMessage("§cLa commande est /message envoyer <message>");
