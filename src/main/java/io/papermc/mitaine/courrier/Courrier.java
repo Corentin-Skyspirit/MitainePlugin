@@ -4,36 +4,43 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import java.util.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
-import java.util.UUID;
 
-public class Courrier implements CommandExecutor, Listener {
+public class Courrier implements CommandExecutor, Listener, TabCompleter {
 
     @EventHandler
-    public void onJoin(PlayerJoinEvent join) throws FileNotFoundException {
+    public void onJoin(PlayerJoinEvent join) throws IOException, FileNotFoundException, IllegalArgumentException {
         Player player = join.getPlayer();
         int nbMsg = 0;
         File messages = new File("plugins/mitaine/messages.txt");
         try {
             Scanner sc = new Scanner(messages);
             while (sc.hasNextLine()) {
-                System.out.println(sc.nextLine());
-                if (sc.nextLine().contains(player.getUniqueId().toString())) {
+                if (player.getUniqueId().equals(UUID.fromString(sc.next()))) {
                     nbMsg++;
                 }
+                sc.nextLine();
             }
             player.sendMessage("[§6Mitaine§f] Bonjour, vous avez §c" + nbMsg + "§f message en attente.");
         } catch (FileNotFoundException e) {
-            Bukkit.getLogger().info(player.getName() + "n'a pas de messages en attente");
+            try {
+                FileWriter file = new FileWriter("plugins/mitaine/messages.txt");
+                file.close();
+            } catch (IOException e1) {
+                Bukkit.getLogger().info("Problème lors de la création du fichier de messages");
+            }
+        } catch (IllegalArgumentException e) {
+            Bukkit.getLogger().info("Problème lors de la lecture de messages");
         }
     }
 
@@ -41,16 +48,16 @@ public class Courrier implements CommandExecutor, Listener {
     public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("courrier")) {
-            if (args[0].equalsIgnoreCase("envoyer")){
+            if (args[0].equalsIgnoreCase("envoyer")) {
                 if (args.length >= 3) {
                     StringBuilder message = new StringBuilder();
                     int cpt = 0;
                     UUID reciever = null;
                     for (String mot : args) {
-                        if (cpt == 1){
+                        if (cpt == 1) {
                             reciever = Bukkit.getPlayerUniqueId(mot);
                         }
-                        if (cpt >= 2){
+                        if (cpt >= 2) {
                             message.append(mot + " ");
                         }
                         cpt++;
@@ -72,10 +79,26 @@ public class Courrier implements CommandExecutor, Listener {
                 } else {
                     sender.sendMessage("§cLa commande est /message envoyer <message>");
                 }
+            } else if (args[0].equalsIgnoreCase("lire")) {
+                if (args.length >= 3) {
+
+                }
             } else {
                 sender.sendMessage("§cLa commande est /message <option>");
             }
         }
         return false;
+    }
+
+    @Override
+    public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args) {
+        if (args.length == 0) {
+            List<String> completions = new ArrayList<>();
+            completions.add("envoyer");
+            completions.add("lire");
+            completions.add("supprimer");
+            return completions;
+        }
+        return null;
     }
 }

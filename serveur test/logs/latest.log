@@ -1,25 +1,25 @@
-[00:13:10] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[00:13:12] [ServerMain/INFO]: Loaded 1174 recipes
-[00:13:12] [ServerMain/INFO]: Loaded 1271 advancements
-[00:13:13] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[00:13:13] [Server thread/INFO]: Loading properties
-[00:13:13] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[00:13:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:13:14] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:13:14] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[21:23:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:23:25] [ServerMain/INFO]: Loaded 1174 recipes
+[21:23:26] [ServerMain/INFO]: Loaded 1271 advancements
+[21:23:26] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[21:23:26] [Server thread/INFO]: Loading properties
+[21:23:26] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
+[21:23:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:23:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:23:27] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[00:13:14] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[00:13:14] [Server thread/INFO]: Default game type: SURVIVAL
-[00:13:14] [Server thread/INFO]: Generating keypair
-[00:13:14] [Server thread/INFO]: Starting Minecraft server on *:25565
-[00:13:14] [Server thread/INFO]: Using default channel type
-[00:13:14] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[00:13:14] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[00:13:14] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
-[00:13:14] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
-[00:13:14] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 37 Terra addons:
+[21:23:27] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[21:23:27] [Server thread/INFO]: Default game type: SURVIVAL
+[21:23:27] [Server thread/INFO]: Generating keypair
+[21:23:27] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:23:27] [Server thread/INFO]: Using default channel type
+[21:23:27] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:23:27] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:23:27] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
+[21:23:27] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
+[21:23:27] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 37 Terra addons:
         - biome-provider-extrusion@1.0.0-BETA+ab60f14ff
         - biome-provider-image@1.0.1-BETA+ab60f14ff
         - biome-provider-image-v2@1.0.1-BETA+ab60f14ff
@@ -57,349 +57,65 @@
         - terra@1.0.0
         - terra-bukkit@1.0.0
         - terrascript-function-sampler@1.0.0-BETA+ab60f14ff
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
-[00:13:15] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.4.3-BETA+ab60f14ff
-[00:13:15] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:13:15] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:13:15] [Server thread/INFO]: [Terra] Enabling Terra v6.4.3-BETA+ab60f14ff
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.3 with server implementation Paper.
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
-[00:13:15] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
-[00:13:16] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
-[00:13:16] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.4 by Astrash, Sancires, Aureus in 1467.5294ms.
-[00:13:17] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
-[00:13:17] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Hacking biome registry...
-[00:13:17] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Doing tag garbage....
-[00:13:17] [Server thread/INFO]: Preparing level "world"
-[00:13:18] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.NMSInjectListener] Preparing to take over the world: world
-[00:13:18] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.NMSInjectListener] Successfully injected into world.
-[00:13:18] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[00:13:18] [Server thread/INFO]: Time elapsed: 482 ms
-[00:13:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[00:13:18] [Server thread/INFO]: Time elapsed: 28 ms
-[00:13:18] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[00:13:18] [Server thread/INFO]: Time elapsed: 28 ms
-[00:13:18] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:13:18] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[00:13:18] [Server thread/INFO]: Running delayed init tasks
-[00:13:18] [Server thread/INFO]: Done (5.708s)! For help, type "help"
-[00:13:18] [Server thread/INFO]: Timings Reset
-[00:13:22] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[00:13:22] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to MitainePlugin v1.0.0
-java.lang.NullPointerException: Cannot read the array length because "<local5>" is null
-	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:24) ~[mitaine-1.0-SNAPSHOT.jar:?]
-	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor3.execute(Unknown Source) ~[?:?]
-	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
-	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[00:13:22] [Server thread/INFO]: Skyspirit joined the game
-[00:13:23] [Server thread/INFO]: Skyspirit[/127.0.0.1:58167] logged in with entity id 205 at ([world]-35.67601399201814, 63.0, 22.924035493663506)
-[00:13:50] [Server thread/INFO]: Skyspirit issued server command: /pl
-[00:13:55] [Server thread/INFO]: Skyspirit issued server command: /courrier
-[00:13:55] [Server thread/ERROR]: null
-org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
-	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
-	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:37) ~[mitaine-1.0-SNAPSHOT.jar:?]
-	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	... 29 more
-[00:14:00] [Server thread/INFO]: Skyspirit issued server command: /courrier Skyspirit
-[00:14:19] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit message
-[00:14:19] [Server thread/INFO]: [Mitaine] [STDOUT] Il y a eu une erreur dans la création du fichier messages.txt
-[00:14:19] [Server thread/WARN]: Nag author(s): '[Skyspirit]' of 'MitainePlugin v1.0.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
-[00:15:10] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit message
-[00:15:28] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[00:15:28] [Server thread/INFO]: Skyspirit left the game
-[00:15:30] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[00:15:30] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to MitainePlugin v1.0.0
-java.lang.NullPointerException: Cannot read the array length because "<local5>" is null
-	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:24) ~[mitaine-1.0-SNAPSHOT.jar:?]
-	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor3.execute(Unknown Source) ~[?:?]
-	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
-	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114) ~[?:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1547) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[00:15:30] [Server thread/INFO]: Skyspirit joined the game
-[00:15:30] [Server thread/INFO]: Skyspirit[/127.0.0.1:58204] logged in with entity id 564 at ([world]-35.67601399201814, 63.0, 22.924035493663506)
-[00:17:05] [Server thread/INFO]: Skyspirit issued server command: /rl
-[00:17:05] [Server thread/INFO]: Skyspirit: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
-[00:17:08] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:17:08] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:17:08] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:17:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:17:08] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:17:08] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:17:08] [Server thread/INFO]: Au revoir
-[00:17:08] [Server thread/INFO]: [Terra] Disabling Terra v6.4.3-BETA+ab60f14ff
-[00:17:08] [Server thread/INFO]: Loaded 1174 recipes
-[00:17:08] [Server thread/INFO]: Loaded 1271 advancements
-[00:17:08] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
-[00:17:08] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
-[00:17:08] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 37 Terra addons:
-        - biome-provider-extrusion@1.0.0-BETA+ab60f14ff
-        - biome-provider-image@1.0.1-BETA+ab60f14ff
-        - biome-provider-image-v2@1.0.1-BETA+ab60f14ff
-        - biome-provider-pipeline@1.0.2-BETA+ab60f14ff
-        - biome-provider-pipeline-v2@1.0.1-BETA+ab60f14ff
-        - biome-provider-single@1.0.0-BETA+ab60f14ff
-        - biome-query-api@1.0.0-BETA+ab60f14ff
-        - chunk-generator-noise-3d@1.2.1-BETA+ab60f14ff
-        - command-addons@1.0.0-BETA+ab60f14ff
-        - command-packs@1.0.0-BETA+ab60f14ff
-        - command-profiler@1.0.0-BETA+ab60f14ff
-        - command-structures@1.0.0-BETA+ab60f14ff
-        - config-biome@1.0.0-BETA+ab60f14ff
-        - config-distributors@1.0.1-BETA+ab60f14ff
-        - config-feature@1.0.0-BETA+ab60f14ff
-        - config-flora@1.0.1-BETA+ab60f14ff
-        - config-locators@1.1.1-BETA+ab60f14ff
-        - config-noise-function@1.1.0-BETA+ab60f14ff
-        - config-number-predicate@1.0.0-BETA+ab60f14ff
-        - config-ore@1.1.1-BETA+ab60f14ff
-        - config-palette@1.0.0-BETA+ab60f14ff
-        - config-structure@1.0.1-BETA+ab60f14ff
-        - generation-stage-feature@1.1.0-BETA+ab60f14ff
-        - generation-stage-structure@1.0.0-BETA+ab60f14ff
-        - language-yaml@1.0.0-BETA+ab60f14ff
-        - library-image@1.1.0-BETA+ab60f14ff
-        - locator-slant-noise-3d@1.0.0-BETA+ab60f14ff
-        - palette-block-shortcut@1.0.0-BETA+ab60f14ff
-        - pipeline-image@1.0.0-BETA+ab60f14ff
-        - structure-block-shortcut@1.0.0-BETA+ab60f14ff
-        - structure-function-check-noise-3d@1.0.1-BETA+ab60f14ff
-        - structure-mutator@0.1.0-BETA+ab60f14ff
-        - structure-sponge-loader@1.0.0-BETA+ab60f14ff
-        - structure-terrascript-loader@1.2.0-BETA+ab60f14ff
-        - terra@1.0.0
-        - terra-bukkit@1.0.0
-        - terrascript-function-sampler@1.0.0-BETA+ab60f14ff
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
-[00:17:09] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.4.3-BETA+ab60f14ff
-[00:17:09] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:17:09] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:17:09] [Server thread/INFO]: [Terra] Enabling Terra v6.4.3-BETA+ab60f14ff
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.3 with server implementation Paper.
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
-[00:17:09] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
-[00:17:10] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.4 by Astrash, Sancires, Aureus in 1239.0739ms.
-[00:17:10] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
-[00:17:10] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Hacking biome registry...
-[00:17:10] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Doing tag garbage....
-[00:17:11] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:17:11] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[00:17:11] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:17:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2831ms or 56 ticks behind
-[00:17:11] [Server thread/INFO]: Timings Reset
-[00:17:13] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit message
-[00:23:28] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[00:23:28] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[00:23:28] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[00:23:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:23:28] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:23:28] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:23:28] [Server thread/INFO]: Au revoir
-[00:23:28] [Server thread/INFO]: [Terra] Disabling Terra v6.4.3-BETA+ab60f14ff
-[00:23:28] [Server thread/INFO]: Loaded 1174 recipes
-[00:23:28] [Server thread/INFO]: Loaded 1271 advancements
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Initializing Terra...
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config.yml
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.config.PluginConfigImpl] Loading config values from config.yml
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading 37 Terra addons:
-        - biome-provider-extrusion@1.0.0-BETA+ab60f14ff
-        - biome-provider-image@1.0.1-BETA+ab60f14ff
-        - biome-provider-image-v2@1.0.1-BETA+ab60f14ff
-        - biome-provider-pipeline@1.0.2-BETA+ab60f14ff
-        - biome-provider-pipeline-v2@1.0.1-BETA+ab60f14ff
-        - biome-provider-single@1.0.0-BETA+ab60f14ff
-        - biome-query-api@1.0.0-BETA+ab60f14ff
-        - chunk-generator-noise-3d@1.2.1-BETA+ab60f14ff
-        - command-addons@1.0.0-BETA+ab60f14ff
-        - command-packs@1.0.0-BETA+ab60f14ff
-        - command-profiler@1.0.0-BETA+ab60f14ff
-        - command-structures@1.0.0-BETA+ab60f14ff
-        - config-biome@1.0.0-BETA+ab60f14ff
-        - config-distributors@1.0.1-BETA+ab60f14ff
-        - config-feature@1.0.0-BETA+ab60f14ff
-        - config-flora@1.0.1-BETA+ab60f14ff
-        - config-locators@1.1.1-BETA+ab60f14ff
-        - config-noise-function@1.1.0-BETA+ab60f14ff
-        - config-number-predicate@1.0.0-BETA+ab60f14ff
-        - config-ore@1.1.1-BETA+ab60f14ff
-        - config-palette@1.0.0-BETA+ab60f14ff
-        - config-structure@1.0.1-BETA+ab60f14ff
-        - generation-stage-feature@1.1.0-BETA+ab60f14ff
-        - generation-stage-structure@1.0.0-BETA+ab60f14ff
-        - language-yaml@1.0.0-BETA+ab60f14ff
-        - library-image@1.1.0-BETA+ab60f14ff
-        - locator-slant-noise-3d@1.0.0-BETA+ab60f14ff
-        - palette-block-shortcut@1.0.0-BETA+ab60f14ff
-        - pipeline-image@1.0.0-BETA+ab60f14ff
-        - structure-block-shortcut@1.0.0-BETA+ab60f14ff
-        - structure-function-check-noise-3d@1.0.1-BETA+ab60f14ff
-        - structure-mutator@0.1.0-BETA+ab60f14ff
-        - structure-sponge-loader@1.0.0-BETA+ab60f14ff
-        - structure-terrascript-loader@1.2.0-BETA+ab60f14ff
-        - terra@1.0.0
-        - terra-bukkit@1.0.0
-        - terrascript-function-sampler@1.0.0-BETA+ab60f14ff
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
-[00:23:28] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.4.3-BETA+ab60f14ff
-[00:23:28] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:23:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:23:28] [Server thread/INFO]: [Terra] Enabling Terra v6.4.3-BETA+ab60f14ff
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.3 with server implementation Paper.
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
-[00:23:28] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
-[00:23:29] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
-[00:23:30] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.4 by Astrash, Sancires, Aureus in 1238.8286ms.
-[00:23:30] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
-[00:23:30] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Hacking biome registry...
-[00:23:30] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Doing tag garbage....
-[00:23:30] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:23:30] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[00:23:30] [Server thread/INFO]: Skyspirit: Reload complete.
-[00:23:30] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2589ms or 51 ticks behind
-[00:23:30] [Server thread/INFO]: Timings Reset
-[00:23:32] [Server thread/INFO]: Skyspirit lost connection: Disconnected
-[00:23:32] [Server thread/INFO]: Skyspirit left the game
-[00:23:34] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
-[00:23:34] [Server thread/INFO]: [Mitaine] [STDOUT] 95f08a24-a484-4771-bf43-e3e2817b74f3 Skyspirit message 
-[00:23:34] [Server thread/WARN]: Nag author(s): '[Skyspirit]' of 'MitainePlugin v1.0.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
-[00:23:34] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to MitainePlugin v1.0.0
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1660) ~[?:?]
-	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:30) ~[mitaine-1.0-SNAPSHOT.jar:?]
-	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor9.execute(Unknown Source) ~[?:?]
-	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
-	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[00:23:34] [Server thread/INFO]: Skyspirit joined the game
-[00:23:34] [Server thread/INFO]: Skyspirit[/127.0.0.1:58269] logged in with entity id 1380 at ([world]-35.67601399201814, 63.0, 22.924035493663506)
-[00:24:11] [Server thread/INFO]: Skyspirit issued server command: /stop
-[00:24:11] [Server thread/INFO]: [Skyspirit: Stopping the server]
-[00:24:11] [Server thread/INFO]: Stopping server
-[00:24:11] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:24:11] [Server thread/INFO]: Au revoir
-[00:24:11] [Server thread/INFO]: [Terra] Disabling Terra v6.4.3-BETA+ab60f14ff
-[00:24:11] [Server thread/INFO]: Saving players
-[00:24:11] [Server thread/INFO]: Skyspirit lost connection: Server closed
-[00:24:11] [Server thread/INFO]: Skyspirit left the game
-[00:24:11] [Server thread/INFO]: Saving worlds
-[00:24:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Saved 6 block chunks, 149 entity chunks, 0 poi chunks in world 'world' in 0,03s
-[00:24:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:24:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[00:24:11] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 13 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[00:24:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:24:12] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[00:24:12] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[00:24:12] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[00:24:12] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[00:24:12] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[00:24:12] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:24:12] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[00:24:12] [Server thread/INFO]: Flushing Chunk IO
-[00:24:12] [Server thread/INFO]: Closing Thread Pool
-[00:24:12] [Server thread/INFO]: Closing Server
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Terra addons successfully loaded.
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Finished initialization.
+[21:23:28] [Server thread/INFO]: [Terra] Loading server plugin Terra v6.4.3-BETA+ab60f14ff
+[21:23:28] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[21:23:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:23:28] [Server thread/INFO]: [Terra] Enabling Terra v6.4.3-BETA+ab60f14ff
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.bukkit.TerraBukkitPlugin] Running on Minecraft version v1.20.3 with server implementation Paper.
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loading config packs...
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.registry.master.ConfigRegistry] Loading ZIP archive: default.zip
+[21:23:28] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loading config pack "OVERWORLD:OVERWORLD"
+[21:23:29] [Server thread/INFO]: [com.dfsek.terra.config.pack.ConfigPackImpl] Loaded config pack "OVERWORLD:OVERWORLD" v1.3.4 by Astrash, Sancires, Aureus in 1388.6745ms.
+[21:23:29] [Server thread/INFO]: [com.dfsek.terra.AbstractPlatform] Loaded packs.
+[21:23:29] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Hacking biome registry...
+[21:23:29] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.AwfulBukkitHacks] Doing tag garbage....
+[21:23:30] [Server thread/INFO]: Preparing level "world"
+[21:23:30] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.NMSInjectListener] Preparing to take over the world: world
+[21:23:30] [Server thread/INFO]: [com.dfsek.terra.bukkit.nms.v1_20_R3.NMSInjectListener] Successfully injected into world.
+[21:23:30] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:23:31] [Server thread/INFO]: Time elapsed: 451 ms
+[21:23:31] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:23:31] [Server thread/INFO]: Time elapsed: 25 ms
+[21:23:31] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:23:31] [Server thread/INFO]: Time elapsed: 25 ms
+[21:23:31] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[21:23:31] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[21:23:31] [Server thread/INFO]: Running delayed init tasks
+[21:23:31] [Server thread/INFO]: Done (4.953s)! For help, type "help"
+[21:23:31] [Server thread/INFO]: Timings Reset
+[21:23:34] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[21:23:34] [Server thread/INFO]: Skyspirit joined the game
+[21:23:34] [Server thread/INFO]: Skyspirit[/127.0.0.1:60159] logged in with entity id 209 at ([world]-34.91523844302403, 63.0, 23.64296221600496)
+[21:23:50] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[21:23:50] [Server thread/INFO]: Skyspirit left the game
+[21:23:53] [Server thread/INFO]: Stopping the server
+[21:23:53] [Server thread/INFO]: Stopping server
+[21:23:53] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[21:23:53] [Server thread/INFO]: Au revoir
+[21:23:53] [Server thread/INFO]: [Terra] Disabling Terra v6.4.3-BETA+ab60f14ff
+[21:23:53] [Server thread/INFO]: Saving players
+[21:23:53] [Server thread/INFO]: Saving worlds
+[21:23:53] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21:23:53] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[21:23:53] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[21:23:53] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[21:23:54] [Server thread/INFO]: [ChunkHolderManager] Saved 1376 block chunks, 1376 entity chunks, 0 poi chunks in world 'world' in 1,15s
+[21:23:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21:23:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[21:23:54] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[21:23:54] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[21:23:54] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[21:23:55] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0,33s
+[21:23:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:23:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[21:23:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[21:23:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[21:23:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[21:23:55] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0,07s
+[21:23:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:23:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:23:55] [Server thread/INFO]: Flushing Chunk IO
+[21:23:55] [Server thread/INFO]: Closing Thread Pool
+[21:23:55] [Server thread/INFO]: Closing Server

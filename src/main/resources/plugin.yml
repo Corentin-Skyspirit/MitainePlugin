@@ -15,12 +15,6 @@ commands:
   courrier:
     description: Permet une gestion des courriers
     permission: courrier.use
-  courrier envoyer:
-    description: permet d'envoyer un courrier
-  courrier lire:
-    description: permet de lire un courrier
-  courrier vider:
-    description: vide la boite aux lettre
   vote:
     description: Voter lors d'un vote
     permission: vote.use
