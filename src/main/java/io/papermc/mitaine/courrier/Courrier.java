@@ -68,7 +68,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                     sender -> player qui envoie le message (récup le nom)
                     message -> message à stocker
                     */
-                    try {
+                    try { // Ah bon bah je vais le refaire en yaml
                         FileWriter courriers = new FileWriter("plugins/mitaine/messages.txt");
                         courriers.write(reciever + " " + sender.getName() + " " + message + "\n");
                         courriers.close();
@@ -80,6 +80,10 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                     sender.sendMessage("§cLa commande est /message envoyer <message>");
                 }
             } else if (args[0].equalsIgnoreCase("lire")) {
+                if (args.length >= 3) {
+
+                }
+            } else if (args[0].equalsIgnoreCase("supprimer")) {
                 if (args.length >= 3) {
 
                 }
