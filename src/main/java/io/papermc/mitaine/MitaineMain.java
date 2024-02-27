@@ -10,22 +10,24 @@ public final class MitaineMain extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveConfig();
+
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
-        getCommand("economie").setExecutor(new Economie());
-//        getCommand("achetericone").setExecutor(new Economie());
+        getCommand("economie").setExecutor(new Economie(this));
+//        getCommand("achetericone").setExecutor(new Economie(this));
 
         getCommand("vote").setExecutor(new Vote());
         getCommand("creervote").setExecutor(new Vote());
         getCommand("resultats").setExecutor(new Vote());
         getServer().getPluginManager().registerEvents(new Vote(), this);
 
-        getCommand("courrier").setExecutor(new Courrier());
-        getServer().getPluginManager().registerEvents(new Courrier(), this);
+        getCommand("courrier").setExecutor(new Courrier(this));
+        getServer().getPluginManager().registerEvents(new Courrier(this), this);
 
-//        getCommand("spawn").setExecutor(new Teleport());
-//        getCommand("base").setExecutor(new Teleport());
-//        getCommand("home").setExecutor(new Teleport());
-//        getCommand("sethome").setExecutor(new Teleport());
+//        getCommand("spawn").setExecutor(new Teleport(this));
+//        getCommand("base").setExecutor(new Teleport(this));
+//        getCommand("home").setExecutor(new Teleport(this));
+//        getCommand("sethome").setExecutor(new Teleport(this));
     }
 
     @Override

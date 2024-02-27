@@ -6,6 +6,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class Teleport implements CommandExecutor {
+    private MitaineMain main;
+
+    public Teleport(MitaineMain mitaineMain) {
+        this.main = mitaineMain;
+    }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
