@@ -1,1 +1,25 @@
-Skyspirit: salut
+95f08a24-a484-4771-bf43-e3e2817b74f3:
+  banque: 15
+  courriers:
+    nombre: 3
+    msg1:
+      sender: '95f08a24-a484-4771-bf43-e3e2817b74f3'
+      message: 'Ouais saut ça va'
+    msg2:
+      sender: 'b4ecab1e-2a3e-40f7-a415-56c6f3b4a317'
+      messages: 'Je me OPENCL là'
+    msg3:
+      sender: 'Banque'
+      messages: '[§6Mitaine§f] Hybanos vous a fait un virement de §c15§f diamants.'
+  teleports:
+    tp1:
+      name: 'base'
+      x: 0
+      y: 100
+      z: 0
+    tp2:
+      name: 'home'
+      x: 50
+      y: 100
+      z: 50
+

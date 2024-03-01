@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -23,7 +24,9 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
     @EventHandler
     public void onJoin(PlayerJoinEvent join) {
         Player player = join.getPlayer();
-
+        main.reloadConfig();
+        FileConfiguration config = main.getConfig();
+        player.sendMessage("Vous avez §c" + config.getString(player.getUniqueId()+".courriers.nombre") + "§f courriers en attente");
     }
 
     @Override

@@ -10,7 +10,7 @@ public final class MitaineMain extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        saveConfig();
+        saveDefaultConfig();
 
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
         getCommand("economie").setExecutor(new Economie(this));

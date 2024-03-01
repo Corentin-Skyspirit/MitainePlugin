@@ -1,204 +1,60 @@
-[00:12:36] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[00:12:38] [ServerMain/INFO]: Loaded 1174 recipes
-[00:12:38] [ServerMain/INFO]: Loaded 1271 advancements
-[00:12:38] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[00:12:38] [Server thread/INFO]: Loading properties
-[00:12:38] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[00:12:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:12:39] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:12:39] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[20:59:58] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:00:00] [ServerMain/INFO]: Loaded 1174 recipes
+[21:00:01] [ServerMain/INFO]: Loaded 1271 advancements
+[21:00:01] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[21:00:01] [Server thread/INFO]: Loading properties
+[21:00:01] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
+[21:00:02] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:00:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:00:02] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[00:12:39] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[00:12:39] [Server thread/INFO]: Default game type: SURVIVAL
-[00:12:39] [Server thread/INFO]: Generating keypair
-[00:12:39] [Server thread/INFO]: Starting Minecraft server on *:25565
-[00:12:39] [Server thread/INFO]: Using default channel type
-[00:12:39] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[00:12:39] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[00:12:39] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'mitaine-1.0-SNAPSHOT.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.loadPlugins(CraftServer.java:505) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:273) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 9 more
-Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.JsonFactory
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 9 more
-[00:12:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:12:39] [Server thread/INFO]: Preparing level "world"
-[00:12:40] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[00:12:40] [Server thread/INFO]: Time elapsed: 248 ms
-[00:12:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[00:12:40] [Server thread/INFO]: Time elapsed: 31 ms
-[00:12:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[00:12:40] [Server thread/INFO]: Time elapsed: 17 ms
-[00:12:40] [Server thread/INFO]: Running delayed init tasks
-[00:12:40] [Server thread/INFO]: Done (1.991s)! For help, type "help"
-[00:12:40] [Server thread/INFO]: Timings Reset
-[00:14:19] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:14:19] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:14:19] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:14:19] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:14:20] [Server thread/INFO]: Loaded 1174 recipes
-[00:14:20] [Server thread/INFO]: Loaded 1271 advancements
-[00:14:20] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'mitaine-1.0-SNAPSHOT.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.loadPlugins(CraftServer.java:505) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.reload(CraftServer.java:1095) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1004) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:972) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:500) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1515) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 17 more
-Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.JsonFactory
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 17 more
-[00:14:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:14:20] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:14:20] [Server thread/INFO]: Timings Reset
-[00:15:04] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:15:04] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:15:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:15:04] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:15:04] [Server thread/INFO]: Loaded 1174 recipes
-[00:15:04] [Server thread/INFO]: Loaded 1271 advancements
-[00:15:05] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'mitaine-1.0-SNAPSHOT.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:127) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.20.4.jar:git-Paper-401]
-	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.loadPlugins(CraftServer.java:505) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.reload(CraftServer.java:1095) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.Bukkit.reload(Bukkit.java:1004) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:972) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:500) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1515) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/core/JsonFactory
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 17 more
-Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.JsonFactory
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:534) ~[?:?]
-	at java.lang.Class.forName(Class.java:513) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:123) ~[paper-1.20.4.jar:git-Paper-401]
-	... 17 more
-[00:15:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:15:05] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:15:05] [Server thread/INFO]: Timings Reset
-[00:20:30] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:20:30] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:20:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:20:30] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:20:30] [Server thread/INFO]: Loaded 1174 recipes
-[00:20:30] [Server thread/INFO]: Loaded 1271 advancements
-[00:20:30] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:20:30] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:20:30] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:20:30] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[00:20:30] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:20:30] [Server thread/INFO]: Timings Reset
-[00:27:05] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[00:27:05] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[00:27:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[00:27:05] [Server thread/INFO]: Using 4 threads for Netty based IO
-[00:27:05] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:27:05] [Server thread/INFO]: Au revoir
-[00:27:05] [Server thread/INFO]: Loaded 1174 recipes
-[00:27:05] [Server thread/INFO]: Loaded 1271 advancements
-[00:27:05] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[00:27:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[00:27:05] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[00:27:05] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[00:27:05] [Server thread/INFO]: CONSOLE: Reload complete.
-[00:27:05] [Server thread/INFO]: Timings Reset
-[00:28:47] [Server thread/INFO]: Stopping the server
-[00:28:47] [Server thread/INFO]: Stopping server
-[00:28:47] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[00:28:47] [Server thread/INFO]: Au revoir
-[00:28:47] [Server thread/INFO]: Saving players
-[00:28:47] [Server thread/INFO]: Saving worlds
-[00:28:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 116 entity chunks, 0 poi chunks in world 'world' in 0,01s
-[00:28:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:28:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[00:28:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:28:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[00:28:47] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[00:28:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:28:47] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[00:28:47] [Server thread/INFO]: Flushing Chunk IO
-[00:28:47] [Server thread/INFO]: Closing Thread Pool
-[00:28:47] [Server thread/INFO]: Closing Server
+[21:00:02] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[21:00:03] [Server thread/INFO]: Default game type: SURVIVAL
+[21:00:03] [Server thread/INFO]: Generating keypair
+[21:00:03] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:00:03] [Server thread/INFO]: Using default channel type
+[21:00:03] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[21:00:03] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[21:00:03] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[21:00:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:00:03] [Server thread/INFO]: Preparing level "world"
+[21:00:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:00:05] [Server thread/INFO]: Time elapsed: 1376 ms
+[21:00:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:00:05] [Server thread/INFO]: Time elapsed: 12 ms
+[21:00:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:00:05] [Server thread/INFO]: Time elapsed: 10 ms
+[21:00:05] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[21:00:05] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[21:00:05] [Server thread/INFO]: Running delayed init tasks
+[21:00:05] [Server thread/INFO]: Done (3.763s)! For help, type "help"
+[21:00:05] [Server thread/INFO]: Timings Reset
+[22:36:47] [Server thread/INFO]: Stopping the server
+[22:36:47] [Server thread/INFO]: Stopping server
+[22:36:47] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[22:36:47] [Server thread/INFO]: Au revoir
+[22:36:47] [Server thread/INFO]: Saving players
+[22:36:47] [Server thread/INFO]: Saving worlds
+[22:36:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 124 entity chunks, 0 poi chunks in world 'world' in 0,01s
+[22:36:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:36:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 14 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:36:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:36:50] [Server thread/INFO]: Flushing Chunk IO
+[22:36:50] [Server thread/INFO]: Closing Thread Pool
+[22:36:50] [Server thread/INFO]: Closing Server
