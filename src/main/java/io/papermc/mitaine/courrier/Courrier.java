@@ -11,11 +11,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.jetbrains.annotations.NotNull;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Courrier implements CommandExecutor, Listener, TabCompleter {
-    private MitaineMain main;
+    private final MitaineMain main;
 
     public Courrier(MitaineMain mitaineMain) {
         this.main = mitaineMain;
@@ -26,55 +29,79 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         Player player = join.getPlayer();
         main.reloadConfig();
         FileConfiguration config = main.getConfig();
-        player.sendMessage("Vous avez §c" + config.getString(player.getUniqueId()+".courriers.nombre") + "§f courriers en attente");
+        player.sendMessage("Vous avez §c" + config.getString(player.getUniqueId() + ".courriers.nombre") + "§f courriers en attente");
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("courrier")) {
-            if (args[0].equalsIgnoreCase("envoyer")) {
-                if (args.length >= 3) {
-                    StringBuilder message = new StringBuilder();
-                    int cpt = 0;
-                    UUID reciever = null;
-                    for (String mot : args) {
-                        if (cpt == 1) {
-                            reciever = Bukkit.getPlayerUniqueId(mot);
+
+            if (args.length != 0) {
+
+                if (args[0].equalsIgnoreCase("envoyer")) {
+                    if (args.length >= 3) {
+                        StringBuilder contenu = new StringBuilder();
+                        UUID reciever = Bukkit.getPlayerUniqueId(args[1]);
+                        if (reciever == null) {
+                            sender.sendMessage("§c Le joueur renseigné n'existe pas");
+                            return false;
                         }
-                        if (cpt >= 2) {
-                            message.append(mot + " ");
+                        for (int i = 2; i < args.length; i++) {
+                            contenu.append(args[i]).append(" ");
                         }
-                        cpt++;
+                        /*
+                        Écrire sur le message.yml les messages (ou txt parce que pas clair)
+                        receiver -> UUID du mec qui reçoit le msg
+                        sender -> player qui envoie le message (récup le nom)
+                        message -> message à stocker
+                        */
+                        String idSender;
+                        if (sender instanceof Player) {
+                            idSender = ((Player) sender).getUniqueId().toString();
+                        } else {
+                            idSender = "[§6Mitaine§f] §cNouvelle Information !§f";
+                        }
+                        String nombre = main.getConfig().getString(reciever + ".courriers.nombre");
+                        int nbMsg = 1;
+                        if (nombre != null) {
+                            nbMsg += Integer.parseInt(nombre);
+                        }
+                        main.getConfig().set(reciever + ".courriers.nombre", nbMsg);
+                        String date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"));
+                        Message message = new Message(idSender, date, contenu.toString());
+                        main.getConfig().set(reciever + ".courriers." + date + ".date", message.getDate());
+                        main.getConfig().set(reciever + ".courriers." + date + ".sender", message.getSender());
+                        main.getConfig().set(reciever + ".courriers." + date + ".message", message.getMessage());
+                        main.saveConfig();
+                        // Objects.requireNonNull(Bukkit.getPlayer(reciever)).sendMessage("[§6Mitaine§f] Vous avez reçu un message !"); --> pour l'instant produit une NullPointerException
+                    } else {
+                        sender.sendMessage("§cLa commande est /courrier envoyer <destinataire> <message>");
                     }
-                    /*
-                    Écrire sur le message.yml les messages (ou txt parce que pas clair)
-                    receiver -> UUID du mec qui reçoit le msg
-                    sender -> player qui envoie le message (récup le nom)
-                    message -> message à stocker
-                    */
+                    return true;
 
-                    Bukkit.getPlayer(reciever).sendMessage("Vous avez reçu un message !");
-                } else {
-                    sender.sendMessage("§cLa commande est /message envoyer <message>");
-                }
-            } else if (args[0].equalsIgnoreCase("lire")) {
-                if (args.length >= 3) {
+                } else if (args[0].equalsIgnoreCase("lire")) {
+                    if (args.length >= 3) {
 
-                }
-            } else if (args[0].equalsIgnoreCase("supprimer")) {
-                if (args.length >= 3) {
+                    }
+                    return true;
 
+                } else if (args[0].equalsIgnoreCase("supprimer")) {
+                    if (args.length >= 3) {
+
+                    }
+                    return true;
                 }
+
             } else {
-                sender.sendMessage("§cLa commande est /message <option>");
+                sender.sendMessage("§cLa commande est /courrier <option>");
             }
         }
         return false;
     }
 
     @Override
-    public List<String> onTabComplete(CommandSender sender, Command cmd, String label, String[] args) {
+    public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String label, String[] args) {
         if (args.length == 0) {
             List<String> completions = new ArrayList<>();
             completions.add("envoyer");

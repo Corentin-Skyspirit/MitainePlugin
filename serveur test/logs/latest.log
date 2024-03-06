@@ -1,60 +1,334 @@
-[20:59:58] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:00:00] [ServerMain/INFO]: Loaded 1174 recipes
-[21:00:01] [ServerMain/INFO]: Loaded 1271 advancements
-[21:00:01] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[21:00:01] [Server thread/INFO]: Loading properties
-[21:00:01] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
-[21:00:02] [Server thread/INFO]: Using 4 threads for Netty based IO
-[21:00:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[21:00:02] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
-    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
-    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[21:00:02] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
-[21:00:03] [Server thread/INFO]: Default game type: SURVIVAL
-[21:00:03] [Server thread/INFO]: Generating keypair
-[21:00:03] [Server thread/INFO]: Starting Minecraft server on *:25565
-[21:00:03] [Server thread/INFO]: Using default channel type
-[21:00:03] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[21:00:03] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[21:00:03] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[21:00:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[21:00:03] [Server thread/INFO]: Preparing level "world"
-[21:00:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[21:00:05] [Server thread/INFO]: Time elapsed: 1376 ms
-[21:00:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[21:00:05] [Server thread/INFO]: Time elapsed: 12 ms
-[21:00:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[21:00:05] [Server thread/INFO]: Time elapsed: 10 ms
-[21:00:05] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[21:00:05] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[21:00:05] [Server thread/INFO]: Running delayed init tasks
-[21:00:05] [Server thread/INFO]: Done (3.763s)! For help, type "help"
-[21:00:05] [Server thread/INFO]: Timings Reset
-[22:36:47] [Server thread/INFO]: Stopping the server
-[22:36:47] [Server thread/INFO]: Stopping server
-[22:36:47] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[22:36:47] [Server thread/INFO]: Au revoir
-[22:36:47] [Server thread/INFO]: Saving players
-[22:36:47] [Server thread/INFO]: Saving worlds
-[22:36:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[22:36:48] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 124 entity chunks, 0 poi chunks in world 'world' in 0,01s
-[22:36:49] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[22:36:49] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[22:36:49] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 14 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:36:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[22:36:50] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:36:50] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22:36:50] [Server thread/INFO]: Flushing Chunk IO
-[22:36:50] [Server thread/INFO]: Closing Thread Pool
-[22:36:50] [Server thread/INFO]: Closing Server
+[00:08:35] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[00:08:36] [Server thread/INFO]: Skyspirit joined the game
+[00:08:36] [Server thread/INFO]: Skyspirit[/127.0.0.1:62615] logged in with entity id 260 at ([world]-56.59315897769868, 78.69803208425687, 35.77484236758552)
+[00:08:51] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit test
+[00:08:58] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:08:58] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:76) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 29 more
+[00:09:14] [Server thread/WARN]: Unexpected exception while parsing console command "courrier envoyer Hybanos test"
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:972) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:500) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:447) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1515) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1216) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:76) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 9 more
+[00:18:26] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:18:26] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:18:26] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:18:26] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:18:26] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:18:26] [Server thread/INFO]: Au revoir
+[00:18:26] [Server thread/INFO]: Loaded 1174 recipes
+[00:18:27] [Server thread/INFO]: Loaded 1271 advancements
+[00:18:27] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:18:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:18:27] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:18:27] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:18:27] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:18:27] [Server thread/INFO]: Timings Reset
+[00:18:30] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[00:18:30] [Server thread/INFO]: Skyspirit left the game
+[00:18:31] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[00:18:31] [Server thread/INFO]: Skyspirit joined the game
+[00:18:31] [Server thread/INFO]: Skyspirit[/127.0.0.1:62725] logged in with entity id 1380 at ([world]-56.59315897769868, 76.45901265284785, 35.77484236758552)
+[00:18:36] [Server thread/INFO]: Skyspirit issued server command: /courrier
+[00:18:42] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:18:42] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:77) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 29 more
+[00:19:37] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:19:37] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:19:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:19:37] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:19:37] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:19:37] [Server thread/INFO]: Au revoir
+[00:19:37] [Server thread/INFO]: Loaded 1174 recipes
+[00:19:37] [Server thread/INFO]: Loaded 1271 advancements
+[00:19:37] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:19:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:19:37] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:19:37] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:19:37] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:19:37] [Server thread/INFO]: Timings Reset
+[00:19:42] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:19:42] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "org.bukkit.entity.Player.sendMessage(String)" because the return value of "org.bukkit.Bukkit.getPlayer(java.util.UUID)" is null
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:77) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 29 more
+[00:21:41] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:21:41] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:21:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:21:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:21:42] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:21:42] [Server thread/INFO]: Au revoir
+[00:21:42] [Server thread/INFO]: Loaded 1174 recipes
+[00:21:42] [Server thread/INFO]: Loaded 1271 advancements
+[00:21:42] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:21:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:21:42] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:21:42] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:21:42] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:21:42] [Server thread/INFO]: Timings Reset
+[00:21:45] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:25:33] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:25:33] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:25:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:25:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:25:33] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:25:33] [Server thread/INFO]: Au revoir
+[00:25:33] [Server thread/INFO]: Loaded 1174 recipes
+[00:25:33] [Server thread/INFO]: Loaded 1271 advancements
+[00:25:33] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:25:33] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:25:33] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:25:33] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:25:33] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:25:33] [Server thread/INFO]: Timings Reset
+[00:25:36] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:25:36] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:77) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 29 more
+[00:31:47] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:31:47] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:31:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:31:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:31:47] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:31:47] [Server thread/INFO]: Au revoir
+[00:31:47] [Server thread/INFO]: Loaded 1174 recipes
+[00:31:47] [Server thread/INFO]: Loaded 1271 advancements
+[00:31:47] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:31:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:31:47] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:31:47] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:31:47] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:31:47] [Server thread/INFO]: Timings Reset
+[00:31:50] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos test
+[00:31:50] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:233) ~[?:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:77) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 29 more
+[00:54:49] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[00:54:49] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[00:54:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[00:54:49] [Server thread/INFO]: Using 4 threads for Netty based IO
+[00:54:49] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:54:49] [Server thread/INFO]: Au revoir
+[00:54:49] [Server thread/INFO]: Loaded 1174 recipes
+[00:54:49] [Server thread/INFO]: Loaded 1271 advancements
+[00:54:49] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[00:54:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[00:54:49] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[00:54:49] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[00:54:49] [Server thread/INFO]: CONSOLE: Reload complete.
+[00:54:49] [Server thread/INFO]: Timings Reset
+[00:55:41] [Server thread/INFO]: La commande est /courrier <option>
+[00:56:50] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Hybanos Normalement sans bug !
+[00:56:57] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit Normalement sans bug !
+[00:57:13] [Server thread/INFO]: Stopping the server
+[00:57:13] [Server thread/INFO]: Stopping server
+[00:57:13] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[00:57:13] [Server thread/INFO]: Au revoir
+[00:57:13] [Server thread/INFO]: Saving players
+[00:57:13] [Server thread/INFO]: Skyspirit lost connection: Server closed
+[00:57:13] [Server thread/INFO]: Skyspirit left the game
+[00:57:13] [Server thread/INFO]: Saving worlds
+[00:57:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saved 5 block chunks, 263 entity chunks, 0 poi chunks in world 'world' in 0,03s
+[00:57:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[00:57:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 16 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[00:57:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[00:57:13] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[00:57:13] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[00:57:13] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[00:57:13] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[00:57:13] [Server thread/INFO]: Flushing Chunk IO
+[00:57:13] [Server thread/INFO]: Closing Thread Pool
+[00:57:13] [Server thread/INFO]: Closing Server

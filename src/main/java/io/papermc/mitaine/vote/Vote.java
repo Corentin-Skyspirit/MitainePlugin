@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -19,10 +20,10 @@ import java.util.UUID;
 public class Vote implements CommandExecutor, Listener {
 
     private static int nb_choix = 0;
-    private static ArrayList<Integer> votes = new ArrayList<>();
-    private static ArrayList<UUID> votants = new ArrayList<>();
-    private static NamespacedKey cleBar = new NamespacedKey("vote", "vote");
-    private final static BossBar barVote = Bukkit.createBossBar(cleBar, "Un vote est en cours faites §c/vote", BarColor.RED, BarStyle.SEGMENTED_20);
+    private static final ArrayList<Integer> votes = new ArrayList<>();
+    private static final ArrayList<UUID> votants = new ArrayList<>();
+    private static final NamespacedKey cleBar = new NamespacedKey("vote", "vote");
+    private static final BossBar barVote = Bukkit.createBossBar(cleBar, "Un vote est en cours faites §c/vote", BarColor.RED, BarStyle.SEGMENTED_20);
     private static String bc = "";
 
     @EventHandler
@@ -35,10 +36,9 @@ public class Vote implements CommandExecutor, Listener {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, String[] args) {
 
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
 
             if (cmd.getName().equalsIgnoreCase("creervote")) {
                 if (args.length > 1) {
@@ -53,14 +53,13 @@ public class Vote implements CommandExecutor, Listener {
                         barVote.addPlayer(p);
                     }
                     barVote.setProgress(1.0);
-                    return true;
                 } else {
                     player.sendMessage("§cLa commande est : /creervote <choix 1> ... <choix n>");
                 }
+                return true;
             }
 
             if (cmd.getName().equalsIgnoreCase("vote")) {
-
                 if (args.length == 1 && !votants.contains(player.getUniqueId())) {
                     if (nb_choix == 0) {
                         player.sendMessage("[§6Mitaine§f] Il n'y a pas de vote en cours");
@@ -85,6 +84,7 @@ public class Vote implements CommandExecutor, Listener {
                         player.sendMessage("[§6Mitaine§f] Vous ne pouvez pas voter plusieurs fois avec le même compte");
                     }
                 }
+                return true;
             }
 
             if (cmd.getName().equalsIgnoreCase("resultats")) {
@@ -118,6 +118,7 @@ public class Vote implements CommandExecutor, Listener {
                     barVote.removeAll();
                     bc = "";
                 }
+                return true;
             }
         }
         return false;

@@ -1,25 +1,86 @@
 95f08a24-a484-4771-bf43-e3e2817b74f3:
   banque: 15
   courriers:
-    nombre: 3
+    nombre: 10
     msg1:
-      sender: '95f08a24-a484-4771-bf43-e3e2817b74f3'
-      message: 'Ouais saut ça va'
+      date: 05-03-2024 20:40:42
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Ouais salut ça va '
     msg2:
-      sender: 'b4ecab1e-2a3e-40f7-a415-56c6f3b4a317'
-      messages: 'Je me OPENCL là'
+      date: 05-03-2024 20:40:42
+      sender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
+      message: 'Je me OPENCL là '
     msg3:
-      sender: 'Banque'
-      messages: '[§6Mitaine§f] Hybanos vous a fait un virement de §c15§f diamants.'
+      date: 05-03-2024 20:40:42
+      sender: Banque
+      message: '[§6Mitaine§f] Hybanos vous a fait un virement de §c15§f diamants. '
+    05-03-2024 20:40:42:
+      date: 05-03-2024 20:40:42
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Salut ! Ceci est un test. '
+    05-03-2024 21:25:10:
+      date: 05-03-2024 21:25:10
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Un autre test pour hybanos '
+    05-03-2024 21:25:37:
+      date: 05-03-2024 21:25:37
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Salut ! Ceci est un test2 ! '
+    06-03-2024 22:28:12:
+      date: 06-03-2024 22:28:12
+      sender: '[§6Mitaine§f] §cNouvelle Information !§f'
+      message: 'test du serv '
+    07-03-2024 00:55:57:
+      date: 07-03-2024 00:55:57
+      sender: '[§6Mitaine§f] §cNouvelle Information !§f'
+      message: 'Salut ! '
+    07-03-2024 00:56:57:
+      date: 07-03-2024 00:56:57
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Normalement sans bug ! '
   teleports:
     tp1:
-      name: 'base'
+      name: base
       x: 0
       y: 100
       z: 0
     tp2:
-      name: 'home'
+      name: home
       x: 50
       y: 100
       z: 50
+b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
+  courriers:
+    nombre: 12
+    05-03-2024 20:42:24:
+      date: 05-03-2024 20:42:24
+      message: 'Un autre test pour hybanos '
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+    06-03-2024 22:28:39:
+      date: 06-03-2024 22:28:39
+      sender: '[§6Mitaine§f] §cNouvelle Information !§f'
+      message: 'test du serv '
+    07-03-2024 00:25:36:
+      date: 07-03-2024 00:25:36
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'test '
+    07-03-2024 00:31:50:
+      date: 07-03-2024 00:31:50
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'test '
+    07-03-2024 00:56:15:
+      date: 07-03-2024 00:56:15
+      sender: '[§6Mitaine§f] §cNouvelle Information !§f'
+      message: 'Salut ! '
+    07-03-2024 00:56:50:
+      date: 07-03-2024 00:56:50
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Normalement sans bug ! '
+6c4ea7ff-b834-408c-9368-fbd2a164ee0c:
+  courriers:
+    nombre: 1
+    05-03-2024 21:42:45:
+      date: 05-03-2024 21:42:45
+      sender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'Salut ! Ceci est un test2 ! '
 
