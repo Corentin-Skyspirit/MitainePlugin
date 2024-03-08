@@ -16,10 +16,10 @@ public final class MitaineMain extends JavaPlugin {
         getCommand("economie").setExecutor(new Economie(this));
 //        getCommand("achetericone").setExecutor(new Economie(this));
 
-        getCommand("vote").setExecutor(new Vote());
-        getCommand("creervote").setExecutor(new Vote());
-        getCommand("resultats").setExecutor(new Vote());
-        getServer().getPluginManager().registerEvents(new Vote(), this);
+        getCommand("vote").setExecutor(new Vote(this));
+        getCommand("creervote").setExecutor(new Vote(this));
+        getCommand("resultats").setExecutor(new Vote(this));
+        getServer().getPluginManager().registerEvents(new Vote(this), this);
 
         getCommand("courrier").setExecutor(new Courrier(this));
         getServer().getPluginManager().registerEvents(new Courrier(this), this);

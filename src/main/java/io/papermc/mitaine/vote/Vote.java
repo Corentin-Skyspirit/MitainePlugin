@@ -1,5 +1,6 @@
 package io.papermc.mitaine.vote;
 
+import io.papermc.mitaine.MitaineMain;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.boss.BarColor;
@@ -23,14 +24,20 @@ public class Vote implements CommandExecutor, Listener {
     private static final ArrayList<Integer> votes = new ArrayList<>();
     private static final ArrayList<UUID> votants = new ArrayList<>();
     private static final NamespacedKey cleBar = new NamespacedKey("vote", "vote");
-    private static final BossBar barVote = Bukkit.createBossBar(cleBar, "Un vote est en cours faites §c/vote", BarColor.RED, BarStyle.SEGMENTED_20);
+    private static BossBar barVote = null;
     private static String bc = "";
+    private final MitaineMain main;
+
+    public Vote(MitaineMain main) {
+        this.main = main;
+        barVote = Bukkit.createBossBar(cleBar, "Un vote est en cours faites " + main.getConfig().getString("important") + "/vote", BarColor.RED, BarStyle.SEGMENTED_20);
+    }
 
     @EventHandler
     public void onJoin(PlayerJoinEvent join) {
         Player player = join.getPlayer();
         if (nb_choix != 0) {
-            player.sendMessage("[§6Mitaine§f] Un vote est en cours, faites §c/vote§f pour voter.\n" + bc);
+            player.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("texte") + " pour voter.\n" + bc);
             barVote.addPlayer(player);
         }
     }
@@ -45,16 +52,16 @@ public class Vote implements CommandExecutor, Listener {
                     votes.add(0);
                     for (String choix : args) {
                         nb_choix++;
-                        bc += "- §c" + nb_choix + "§f pour " + choix + "\n";
+                        bc += "- " + main.getConfig().getString("important") + nb_choix + main.getConfig().getString("texte") + " pour " + choix + "\n";
                         votes.add(0);
                     }
                     for (Player p : Bukkit.getOnlinePlayers()) {
-                        p.sendMessage("[§6Mitaine§f] Un vote est en cours, faites §c/vote§f pour voter.\n" + bc);
+                        p.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("texte") + " pour voter.\n" + bc);
                         barVote.addPlayer(p);
                     }
                     barVote.setProgress(1.0);
                 } else {
-                    player.sendMessage("§cLa commande est : /creervote <choix 1> ... <choix n>");
+                    player.sendMessage(main.getConfig().getString("erreur") + " La commande est : /creervote <choix 1> ... <choix n>");
                 }
                 return true;
             }
@@ -62,26 +69,26 @@ public class Vote implements CommandExecutor, Listener {
             if (cmd.getName().equalsIgnoreCase("vote")) {
                 if (args.length == 1 && !votants.contains(player.getUniqueId())) {
                     if (nb_choix == 0) {
-                        player.sendMessage("[§6Mitaine§f] Il n'y a pas de vote en cours");
+                        player.sendMessage(main.getConfig().getString("titre") + " Il n'y a pas de vote en cours");
                     } else {
                         try {
                             int choix = Integer.parseInt(args[0]);
                             if (choix <= 0 || choix > nb_choix) {
-                                player.sendMessage("§cVous devez rentre un chiffre compris entre 1 et " + nb_choix);
+                                player.sendMessage(main.getConfig().getString("erreur") + " Vous devez rentrer un chiffre compris entre 1 et " + nb_choix);
                             } else {
                                 votes.set(choix, votes.get(choix) + 1);
                                 votants.add(player.getUniqueId());
-                                player.sendMessage("[§6Mitaine§f] Merci, vous avez voté : §c" + choix);
+                                player.sendMessage(main.getConfig().getString("titre") + " Merci, vous avez voté : " + main.getConfig().getString("important") + choix);
                             }
                         } catch (NumberFormatException e) {
-                            player.sendMessage("§cVous devez entrer un chiffre en paramètre");
+                            player.sendMessage(main.getConfig().getString("erreur") + " Vous devez entrer un chiffre en paramètre");
                         }
                     }
                 } else {
                     if (args.length != 1) {
-                        player.sendMessage("§cLa commande est : /vote <choix>");
+                        player.sendMessage(main.getConfig().getString("erreur") + " La commande est : /vote <choix>");
                     } else if (votants.contains(player.getUniqueId())) {
-                        player.sendMessage("[§6Mitaine§f] Vous ne pouvez pas voter plusieurs fois avec le même compte");
+                        player.sendMessage(main.getConfig().getString("titre") + " Vous ne pouvez pas voter plusieurs fois avec le même compte");
                     }
                 }
                 return true;
@@ -89,13 +96,13 @@ public class Vote implements CommandExecutor, Listener {
 
             if (cmd.getName().equalsIgnoreCase("resultats")) {
                 if (nb_choix == 0) {
-                    player.sendMessage("[§6Mitaine§f] Il n'y a pas de vote pour le moment");
+                    player.sendMessage(main.getConfig().getString("titre") + " Il n'y a pas de vote pour le moment");
                 } else {
                     StringBuilder res = new StringBuilder();
                     for (int i = 1; i <= nb_choix; i++) {
-                        res.append("- §c" + votes.get(i) + "§f pour le vote " + i + "\n");
+                        res.append("- ").append(main.getConfig().getString("important")).append(votes.get(i)).append(main.getConfig().getString("texte")).append(" pour le vote ").append(i).append("\n");
                     }
-                    player.sendMessage("[§6Mitaine§f] Le résultat du vote est :\n" + res);
+                    player.sendMessage(main.getConfig().getString("titre") + " Le résultat du vote est :\n" + res);
                     int idMax = 0;
                     int sum = 0;
                     for (int v = 0; v < votes.size(); v++) {
@@ -105,12 +112,12 @@ public class Vote implements CommandExecutor, Listener {
                         }
                     }
                     if (sum != 0) {
-                        String message = "[§6Mitaine§f] Le choix §cn°" + idMax + "§f remporte le vote avec §c" + (double) 100 * votes.get(idMax) / sum + "%§f des voix";
+                        String message = main.getConfig().getString("titre") + " Le choix " + main.getConfig().getString("important") + "n°" + idMax + main.getConfig().getString("texte") + " remporte le vote avec " + main.getConfig().getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + main.getConfig().getString("texte") + " des voix";
                         for (Player p : Bukkit.getOnlinePlayers()) {
                             p.sendMessage(message);
                         }
                     } else {
-                        player.sendMessage("§c Il n'y a eu aucun vote");
+                        player.sendMessage(main.getConfig().getString("erreur") + "  Il n'y a eu aucun vote");
                     }
                     nb_choix = 0;
                     votes.clear();

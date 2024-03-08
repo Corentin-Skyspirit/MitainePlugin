@@ -33,7 +33,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         if (nombre != null) {
             config.set(player + ".courriers.nombre", 0);
         }
-        player.sendMessage("Vous avez §c" + config.getString(player.getUniqueId() + ".courriers.nombre") + "§f courriers en attente");
+        player.sendMessage("Vous avez " + main.getConfig().getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + main.getConfig().getString("texte") + " courriers en attente");
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         StringBuilder contenu = new StringBuilder();
                         UUID reciever = Bukkit.getPlayerUniqueId(args[1]);
                         if (reciever == null) {
-                            sender.sendMessage("§c Le joueur renseigné n'existe pas");
+                            sender.sendMessage(main.getConfig().getString("erreur") + " Le joueur renseigné n'existe pas");
                             return false;
                         }
                         for (int i = 2; i < args.length; i++) {
@@ -60,11 +60,11 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         sender -> player qui envoie le message (récup le nom)
                         message -> message à stocker
                         */
-                        String idSender;
+                        String nameSender;
                         if (sender instanceof Player) {
-                            idSender = ((Player) sender).getUniqueId().toString();
+                            nameSender = sender.getName();
                         } else {
-                            idSender = "INFOSERVER";
+                            nameSender = main.getConfig().getString("titre") + main.getConfig().getString("important") + " Admin";
                         }
                         FileConfiguration config = main.getConfig();
                         String nombre = config.getString(reciever + ".courriers.nombre");
@@ -73,19 +73,19 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             nbMsg += Integer.parseInt(nombre);
                         }
                         config.set(reciever + ".courriers.nombre", nbMsg);
-                        Message message = new Message(idSender, LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")), contenu.toString());
+                        Message message = new Message(nameSender, LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")), contenu.toString());
                         config.set(reciever + ".courriers." + nbMsg + ".date", message.getDate());
                         config.set(reciever + ".courriers." + nbMsg + ".sender", message.getSender());
                         config.set(reciever + ".courriers." + nbMsg + ".message", message.getMessage());
                         main.saveConfig();
                         try {
-                            Objects.requireNonNull(Bukkit.getPlayer(reciever)).sendMessage("[§6Mitaine§f] Vous avez reçu un message !");
-                            sender.sendMessage("Le courrier a bien été envoyé à §c" + args[1]);
+                            Objects.requireNonNull(Bukkit.getPlayer(reciever)).sendMessage(main.getConfig().getString("titre") + " Vous avez reçu un message !");
+                            sender.sendMessage("Le courrier a bien été envoyé à " + main.getConfig().getString("important") + args[1]);
                         } catch (NullPointerException e) {
                             sender.sendMessage("Le joueur n'est pas en ligne, il verra le message à la prochaine connexion");
                         }
                     } else {
-                        sender.sendMessage("§cLa commande est /courrier envoyer <destinataire> <message>");
+                        sender.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier envoyer <destinataire> <message>");
                     }
                     return true;
 
@@ -95,19 +95,13 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             UUID idPlayer = player.getUniqueId();
                             FileConfiguration config = main.getConfig();
                             int nbMsg = config.getInt(idPlayer + ".courriers.nombre");
-                            player.sendMessage("Vous avez §c" + config.getString(idPlayer + ".courriers.nombre") + "§f courriers en attente");
+                            player.sendMessage("Vous avez " + main.getConfig().getString("important") + config.getString(idPlayer + ".courriers.nombre") + main.getConfig().getString("texte") + " courriers en attente");
                             for (int i = 1; i <= nbMsg; i++) {
-                                String nomSender = config.getString(idPlayer + ".courriers." + i + ".sender");
-                                if (Objects.equals(nomSender, "INFOSERVER")) {
-                                    nomSender = "[§6Mitaine§f] §cInformation Serveur !§f";
-                                } else {
-                                    // Faire la récup de nom de player
-                                }
-                                player.sendMessage("Message " + i + " envoyé le " + config.getString(idPlayer + ".courriers." + i + ".date") + " par " + nomSender);
+                                player.sendMessage(i + " - Reçu le " + config.getString("discret") + config.getString(idPlayer + ".courriers." + i + ".date") + main.getConfig().getString("texte") + " par " + main.getConfig().getString("important") + config.getString(idPlayer + ".courriers." + i + ".sender"));
                                 // Faire un truc cliquable pour ouvrir le message ?
                             }
                         } else {
-                            player.sendMessage("§cLa commande est /courrier liste");
+                            player.sendMessage( main.getConfig().getString("erreur") + "La commande est /courrier liste");
                         }
                     }
                     return true;
@@ -115,9 +109,9 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                 } else if (args[0].equalsIgnoreCase("lire")) {
                     if (sender instanceof Player player) {
                         if (args.length == 2) {
-
+                            // Faire un truc cliquable pour répondre / supprimer
                         } else {
-                            player.sendMessage("§cLa commande est /courrier lire <nombre>");
+                            player.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier lire <nombre>");
                         }
                     }
                 } else if (args[0].equalsIgnoreCase("supprimer")) {
@@ -126,14 +120,14 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             // Faire que le message supprimé réarange la liste
                             // Afficher la liste à chaque fois
                         } else {
-                            player.sendMessage("§cLa commande est /courrier supprimer <nombre>");
+                            player.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier supprimer <nombre>");
                         }
                     }
                     return true;
                 }
 
             } else {
-                sender.sendMessage("§cLa commande est /courrier <option>");
+                sender.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier <option>");
             }
         }
         return false;
