@@ -33,7 +33,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         if (nombre != null) {
             config.set(player + ".courriers.nombre", 0);
         }
-        player.sendMessage("Vous avez " + main.getConfig().getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + main.getConfig().getString("texte") + " courriers en attente");
+        player.sendMessage("Vous avez " + main.getConfig().getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + main.getConfig().getString("normal") + " courriers en attente");
     }
 
     @Override
@@ -47,8 +47,9 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                     if (args.length >= 3) {
                         StringBuilder contenu = new StringBuilder();
                         UUID reciever = Bukkit.getPlayerUniqueId(args[1]);
+                        FileConfiguration config = main.getConfig();
                         if (reciever == null) {
-                            sender.sendMessage(main.getConfig().getString("erreur") + " Le joueur renseigné n'existe pas");
+                            sender.sendMessage(config.getString("erreur") + " Le joueur renseigné n'existe pas");
                             return false;
                         }
                         for (int i = 2; i < args.length; i++) {
@@ -61,26 +62,27 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         message -> message à stocker
                         */
                         String nameSender;
+                        UUID idSender = null;
                         if (sender instanceof Player) {
                             nameSender = sender.getName();
+                            idSender = ((Player) sender).getUniqueId();
                         } else {
-                            nameSender = main.getConfig().getString("titre") + main.getConfig().getString("important") + " Admin";
+                            nameSender = config.getString("titre") + config.getString("important") + " Admin";
                         }
-                        FileConfiguration config = main.getConfig();
                         String nombre = config.getString(reciever + ".courriers.nombre");
                         int nbMsg = 1;
                         if (nombre != null) {
                             nbMsg += Integer.parseInt(nombre);
                         }
                         config.set(reciever + ".courriers.nombre", nbMsg);
-                        Message message = new Message(nameSender, LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")), contenu.toString());
-                        config.set(reciever + ".courriers." + nbMsg + ".date", message.getDate());
-                        config.set(reciever + ".courriers." + nbMsg + ".sender", message.getSender());
-                        config.set(reciever + ".courriers." + nbMsg + ".message", message.getMessage());
+                        config.set(reciever + ".courriers." + nbMsg + ".date", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")));
+                        config.set(reciever + ".courriers." + nbMsg + ".sender", nameSender);
+                        config.set(reciever + ".courriers." + nbMsg + ".idSender", idSender);
+                        config.set(reciever + ".courriers." + nbMsg + ".message", contenu.toString());
                         main.saveConfig();
                         try {
-                            Objects.requireNonNull(Bukkit.getPlayer(reciever)).sendMessage(main.getConfig().getString("titre") + " Vous avez reçu un message !");
-                            sender.sendMessage("Le courrier a bien été envoyé à " + main.getConfig().getString("important") + args[1]);
+                            Objects.requireNonNull(Bukkit.getPlayer(reciever)).sendMessage(config.getString("titre") + " Vous avez reçu un message !");
+                            sender.sendMessage("Le courrier a bien été envoyé à " + config.getString("important") + args[1]);
                         } catch (NullPointerException e) {
                             sender.sendMessage("Le joueur n'est pas en ligne, il verra le message à la prochaine connexion");
                         }
@@ -95,32 +97,57 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             UUID idPlayer = player.getUniqueId();
                             FileConfiguration config = main.getConfig();
                             int nbMsg = config.getInt(idPlayer + ".courriers.nombre");
-                            player.sendMessage("Vous avez " + main.getConfig().getString("important") + config.getString(idPlayer + ".courriers.nombre") + main.getConfig().getString("texte") + " courriers en attente");
+                            player.sendMessage("Vous avez " + config.getString("important") + config.getString(idPlayer + ".courriers.nombre") + main.getConfig().getString("normal") + " courriers en attente");
                             for (int i = 1; i <= nbMsg; i++) {
-                                player.sendMessage(i + " - Reçu le " + config.getString("discret") + config.getString(idPlayer + ".courriers." + i + ".date") + main.getConfig().getString("texte") + " par " + main.getConfig().getString("important") + config.getString(idPlayer + ".courriers." + i + ".sender"));
+                                player.sendMessage(config.getString("discret") + i + config.getString("normal") + " - Reçu le " + config.getString("discret") + config.getString(idPlayer + ".courriers." + i + ".date") + main.getConfig().getString("normal") + " par " + main.getConfig().getString("important") + config.getString(idPlayer + ".courriers." + i + ".sender"));
                                 // Faire un truc cliquable pour ouvrir le message ?
                             }
                         } else {
-                            player.sendMessage( main.getConfig().getString("erreur") + "La commande est /courrier liste");
+                            player.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier liste");
                         }
                     }
                     return true;
 
                 } else if (args[0].equalsIgnoreCase("lire")) {
                     if (sender instanceof Player player) {
-                        if (args.length == 2) {
+                        FileConfiguration config = main.getConfig();
+                        int nbMsg = config.getInt(player.getUniqueId() + ".courriers.nombre");
+                        int entree = 0;
+                        try {
+                            entree = Integer.parseInt(args[1]);
+                        } catch (NullPointerException e) {
+                            player.sendMessage(config.getString("erreur") + "La commande est /courrier lire <nombre>");
+                        }
+                        if (args.length == 2 && entree <= nbMsg && entree > 0) {
+                            String enTete = player.getUniqueId() + ".courriers." + args[1];
+                            player.sendMessage(config.getString("discret") + config.getString(enTete + ".date") + config.getString("normal") + " - " + config.getString("important") + config.getString(enTete + ".sender"));
+                            player.sendMessage(Objects.requireNonNull(config.getString(enTete + ".message")));
                             // Faire un truc cliquable pour répondre / supprimer
                         } else {
-                            player.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier lire <nombre>");
+                            player.sendMessage(config.getString("erreur") + "La commande est /courrier lire <nombre>");
                         }
                     }
+                    return true;
+
                 } else if (args[0].equalsIgnoreCase("supprimer")) {
                     if (sender instanceof Player player) {
-                        if (args.length == 2) {
+                        FileConfiguration config = main.getConfig();
+                        int nbMsg = config.getInt(player.getUniqueId() + ".courriers.nombre");
+                        int entree = 0;
+                        try {
+                            entree = Integer.parseInt(args[1]);
+                        } catch (NullPointerException e) {
+                            player.sendMessage(config.getString("erreur") + "La commande est /courrier supprimer <nombre>");
+                        }
+                        if (args.length == 2 && entree <= nbMsg && entree > 0) {
+                            for (int i = 0; i < nbMsg; i++) {
+                                config.set(player.getUniqueId() + ".courriers." + (entree + i) + ".date", player.getUniqueId() + ".courriers." + (entree + i + 1) + ".date");
+                            }
+                            player.sendMessage("Message Supprimé");
                             // Faire que le message supprimé réarange la liste
                             // Afficher la liste à chaque fois
                         } else {
-                            player.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier supprimer <nombre>");
+                            player.sendMessage(config.getString("erreur") + "La commande est /courrier supprimer <nombre>");
                         }
                     }
                     return true;

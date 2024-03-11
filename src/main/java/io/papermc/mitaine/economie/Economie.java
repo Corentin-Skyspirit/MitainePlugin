@@ -27,7 +27,7 @@ public class Economie implements CommandExecutor {
                 if (args.length != 0) {
 
                     if (args[0].equalsIgnoreCase("banque")) {
-                        player.sendMessage(main.getConfig().getString("titre") + " Vous avez " + main.getConfig().getString("important") + 64 + main.getConfig().getString("texte") + " diamants en banque.");
+                        player.sendMessage(main.getConfig().getString("titre") + " Vous avez " + main.getConfig().getString("important") + 64 + main.getConfig().getString("normal") + " diamants en banque.");
                         return true;
                     }
 

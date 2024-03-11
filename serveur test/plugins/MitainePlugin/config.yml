@@ -1,53 +1,28 @@
 titre: '§f[§3Mitaine§f]'
 erreur: '§c'
-texte: '§f'
+normal: '§f'
 important: '§6'
 discret: '§7'
 valider: '§2'
 95f08a24-a484-4771-bf43-e3e2817b74f3:
   banque: 15
   courriers:
-    nombre: 10
+    nombre: 3
     '1':
-      date: 05-03-2024 20:40:42
+      date: 05-03-2024 à 20:40:42
       sender: Skyspirit
+      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
       message: 'Ouais salut ça va '
     '2':
       date: 05-03-2024 à 20:40:42
       sender: Hybanos
+      idSender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
       message: 'Je me OPENCL là '
     '3':
       date: 05-03-2024 à 20:40:42
       sender: "§f[§6Mitaine§f] §cAdmin§f"
-      message: 'Hybanos vous a fait un virement de §c15§f diamants. '
-    '4':
-      date: 05-03-2024 à 20:40:42
-      sender: Skyspirit
-      message: 'Salut ! Ceci est un test. '
-    '5':
-      date: 05-03-2024 à 21:25:10
-      sender: Skyspirit
-      message: 'Un autre test pour hybanos '
-    '6':
-      date: 05-03-2024 à 21:25:37
-      sender: Skyspirit
-      message: 'Salut ! Ceci est un test2 ! '
-    '7':
-      date: 06-03-2024 à 22:28:12
-      sender: "§f[§6Mitaine§f] §cAdmin§f"
-      message: 'test du serv '
-    '8':
-      date: 07-03-2024 à 00:55:57
-      sender: "§f[§6Mitaine§f] §cAdmin§f"
-      message: 'Salut ! '
-    '9':
-      date: 07-03-2024 à 00:56:57
-      sender: Skyspirit
-      message: 'Normalement sans bug ! '
-    '10':
-      date: 07-03-2024 à 22:57:15
-      sender: Skyspirit
-      message: 'Petit message test '
+      idSender: null
+      message: 'Hybanos vous a fait un virement de 15 diamants. '
   teleports:
     tp1:
       name: base
@@ -59,46 +34,3 @@ valider: '§2'
       x: 50
       y: 100
       z: 50
-b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
-  courriers:
-    nombre: 7
-    '1':
-      date: 05-03-2024 à 20:42:24
-      message: 'Un autre test pour hybanos '
-      sender: Skyspirit
-    '2':
-      date: 06-03-2024 à 22:28:39
-      sender: "§f[§6Mitaine§f] §cAdmin§f"
-      message: 'test du serv '
-    '3':
-      date: 07-03-2024 à 00:25:36
-      sender: Skyspirit
-      message: 'test '
-    '4':
-      date: 07-03-2024 à 00:31:50
-      sender: Skyspirit
-      message: 'test '
-    '5':
-      date: 07-03-2024 à 00:56:15
-      sender: "§f[§6Mitaine§f] §cAdmin§f"
-      message: 'Salut ! '
-    '6':
-      date: 07-03-2024 à 00:56:50
-      sender: Skyspirit
-      message: 'Normalement sans bug ! '
-    '7':
-      date: 07-03-2024 à 22:57:30
-      sender: Skyspirit
-      message: 'Petit message test '
-6c4ea7ff-b834-408c-9368-fbd2a164ee0c:
-  courriers:
-    nombre: 2
-    '1':
-      date: 05-03-2024 à 21:42:45
-      sender: Skyspirit
-      message: 'Salut ! Ceci est un test2 ! '
-    '2':
-      date: 07-03-2024 à 21:13:55
-      sender: Skyspirit
-      message: 'test '
-

@@ -37,7 +37,7 @@ public class Vote implements CommandExecutor, Listener {
     public void onJoin(PlayerJoinEvent join) {
         Player player = join.getPlayer();
         if (nb_choix != 0) {
-            player.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("texte") + " pour voter.\n" + bc);
+            player.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("normal") + " pour voter.\n" + bc);
             barVote.addPlayer(player);
         }
     }
@@ -52,11 +52,11 @@ public class Vote implements CommandExecutor, Listener {
                     votes.add(0);
                     for (String choix : args) {
                         nb_choix++;
-                        bc += "- " + main.getConfig().getString("important") + nb_choix + main.getConfig().getString("texte") + " pour " + choix + "\n";
+                        bc += bc + ("- " + main.getConfig().getString("important") + nb_choix + main.getConfig().getString("normal") + " pour " + choix + "\n");
                         votes.add(0);
                     }
                     for (Player p : Bukkit.getOnlinePlayers()) {
-                        p.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("texte") + " pour voter.\n" + bc);
+                        p.sendMessage(main.getConfig().getString("titre") + " Un vote est en cours, faites " + main.getConfig().getString("important") + "/vote" + main.getConfig().getString("normal") + " pour voter.\n" + bc);
                         barVote.addPlayer(p);
                     }
                     barVote.setProgress(1.0);
@@ -100,7 +100,7 @@ public class Vote implements CommandExecutor, Listener {
                 } else {
                     StringBuilder res = new StringBuilder();
                     for (int i = 1; i <= nb_choix; i++) {
-                        res.append("- ").append(main.getConfig().getString("important")).append(votes.get(i)).append(main.getConfig().getString("texte")).append(" pour le vote ").append(i).append("\n");
+                        res.append("- ").append(main.getConfig().getString("important")).append(votes.get(i)).append(main.getConfig().getString("normal")).append(" pour le vote ").append(i).append("\n");
                     }
                     player.sendMessage(main.getConfig().getString("titre") + " Le résultat du vote est :\n" + res);
                     int idMax = 0;
@@ -112,7 +112,7 @@ public class Vote implements CommandExecutor, Listener {
                         }
                     }
                     if (sum != 0) {
-                        String message = main.getConfig().getString("titre") + " Le choix " + main.getConfig().getString("important") + "n°" + idMax + main.getConfig().getString("texte") + " remporte le vote avec " + main.getConfig().getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + main.getConfig().getString("texte") + " des voix";
+                        String message = main.getConfig().getString("titre") + " Le choix " + main.getConfig().getString("important") + "n°" + idMax + main.getConfig().getString("normal") + " remporte le vote avec " + main.getConfig().getString("important") + (double) 100 * votes.get(idMax) / sum + "%" + main.getConfig().getString("normal") + " des voix";
                         for (Player p : Bukkit.getOnlinePlayers()) {
                             p.sendMessage(message);
                         }
