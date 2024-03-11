@@ -52,7 +52,7 @@ public class Vote implements CommandExecutor, Listener {
                     votes.add(0);
                     for (String choix : args) {
                         nb_choix++;
-                        bc += bc + ("- " + main.getConfig().getString("important") + nb_choix + main.getConfig().getString("normal") + " pour " + choix + "\n");
+                        bc += "- " + main.getConfig().getString("important") + nb_choix + main.getConfig().getString("normal") + " pour " + choix + "\n";
                         votes.add(0);
                     }
                     for (Player p : Bukkit.getOnlinePlayers()) {

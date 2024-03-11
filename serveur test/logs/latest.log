@@ -1,22 +1,429 @@
-[01:13:20] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
-[01:13:20] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
-[01:13:20] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
-[01:13:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:13:20] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:13:20] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[01:13:20] [Server thread/INFO]: Au revoir
-[01:13:20] [Server thread/INFO]: Loaded 1174 recipes
-[01:13:20] [Server thread/INFO]: Loaded 1271 advancements
-[01:13:20] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[01:13:20] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[01:13:20] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[01:13:20] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[01:13:20] [Server thread/INFO]: Skyspirit: Reload complete.
-[01:13:20] [Server thread/INFO]: Timings Reset
-[01:13:36] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
-[01:13:54] [Server thread/INFO]: Skyspirit issued server command: /courrier lire
-[01:13:57] [Server thread/INFO]: Skyspirit issued server command: /courrier lire Skyspirit
-[01:13:57] [Server thread/ERROR]: null
+[22:28:01] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:28:02] [ServerMain/INFO]: Loaded 1174 recipes
+[22:28:03] [ServerMain/INFO]: Loaded 1271 advancements
+[22:28:03] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[22:28:03] [Server thread/INFO]: Loading properties
+[22:28:03] [Server thread/INFO]: This server is running Paper version git-Paper-401 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 1ed50da)
+[22:28:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:28:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:28:04] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[22:28:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 6 worker threads, and gen parallelism of 6 threads
+[22:28:04] [Server thread/INFO]: Default game type: SURVIVAL
+[22:28:04] [Server thread/INFO]: Generating keypair
+[22:28:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:28:04] [Server thread/INFO]: Using default channel type
+[22:28:04] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[22:28:04] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[22:28:04] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[22:28:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:28:04] [Server thread/INFO]: Preparing level "world"
+[22:28:05] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:28:05] [Server thread/INFO]: Time elapsed: 325 ms
+[22:28:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[22:28:05] [Server thread/INFO]: Time elapsed: 23 ms
+[22:28:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[22:28:05] [Server thread/INFO]: Time elapsed: 20 ms
+[22:28:05] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[22:28:05] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[22:28:06] [Server thread/INFO]: Running delayed init tasks
+[22:28:06] [Server thread/INFO]: Done (2.524s)! For help, type "help"
+[22:28:06] [Server thread/INFO]: Timings Reset
+[22:32:07] [User Authenticator #0/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:32:08] [Server thread/INFO]: Skyspirit joined the game
+[22:32:08] [Server thread/INFO]: Skyspirit[/127.0.0.1:62707] logged in with entity id 213 at ([world]-51.96849309601461, 91.6664338705529, 34.33211909504852)
+[22:33:26] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:33:34] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit test
+[22:33:39] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:33:47] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[22:33:54] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
+[22:33:57] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
+[22:33:59] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[22:34:02] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 2
+[22:34:04] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
+[22:36:47] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[22:36:47] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[22:36:47] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[22:36:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:36:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:36:47] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[22:36:47] [Server thread/INFO]: Au revoir
+[22:36:47] [Server thread/INFO]: Loaded 1174 recipes
+[22:36:47] [Server thread/INFO]: Loaded 1271 advancements
+[22:36:48] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[22:36:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:36:48] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[22:36:48] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[22:36:48] [Server thread/ERROR]: Cannot load plugins\MitainePlugin\config.yml
+org.bukkit.configuration.InvalidConfigurationException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:174) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.getConfig(JavaPlugin.java:150) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.vote.Vote.<init>(Vote.java:33) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.MitaineMain.onEnable(MitaineMain.java:19) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:190) ~[paper-1.20.4.jar:git-Paper-401]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:637) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:548) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.reload(CraftServer.java:1097) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.Bukkit.reload(Bukkit.java:1004) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:54) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:987) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.craftbukkit.v1_20_R3.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.20.4.jar:git-Paper-401]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.2.9.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:32) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.CommandQueueEntry.a(CommandQueueEntry.java:5) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:101) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:434) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:336) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:323) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2216) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$16(ServerGamePacketListenerImpl.java:2176) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.yaml.snakeyaml.composer.ComposerException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:231) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:575) ~[snakeyaml-2.2.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 45 more
+[22:36:48] [Server thread/INFO]: Skyspirit: Reload complete.
+[22:36:48] [Server thread/INFO]: Timings Reset
+[22:36:50] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:36:50] [Server thread/INFO]: Skyspirit left the game
+[22:36:51] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:36:51] [Server thread/ERROR]: Cannot load plugins\MitainePlugin\config.yml
+org.bukkit.configuration.InvalidConfigurationException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:174) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:30) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor4.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.yaml.snakeyaml.composer.ComposerException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:231) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:575) ~[snakeyaml-2.2.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[22:36:51] [Server thread/INFO]: Skyspirit joined the game
+[22:36:51] [Server thread/INFO]: Skyspirit[/127.0.0.1:62782] logged in with entity id 927 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:37:33] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:37:33] [Server thread/INFO]: Skyspirit left the game
+[22:37:35] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:37:35] [Server thread/INFO]: Skyspirit joined the game
+[22:37:35] [Server thread/INFO]: Skyspirit[/127.0.0.1:62794] logged in with entity id 978 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:37:46] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:37:46] [Server thread/INFO]: Skyspirit left the game
+[22:37:47] [User Authenticator #1/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:37:47] [Server thread/ERROR]: Cannot load plugins\MitainePlugin\config.yml
+org.bukkit.configuration.InvalidConfigurationException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:174) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:30) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor4.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.yaml.snakeyaml.composer.ComposerException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 28, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:231) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:575) ~[snakeyaml-2.2.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[22:37:47] [Server thread/INFO]: Skyspirit joined the game
+[22:37:47] [Server thread/INFO]: Skyspirit[/127.0.0.1:62807] logged in with entity id 989 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:39:27] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[22:39:27] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[22:39:27] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[22:39:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:39:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:39:27] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[22:39:27] [Server thread/INFO]: Au revoir
+[22:39:28] [Server thread/INFO]: Loaded 1174 recipes
+[22:39:28] [Server thread/INFO]: Loaded 1271 advancements
+[22:39:28] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[22:39:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:39:28] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[22:39:28] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[22:39:28] [Server thread/INFO]: Skyspirit: Reload complete.
+[22:39:28] [Server thread/INFO]: Timings Reset
+[22:39:34] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit test
+[22:39:40] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 3
+[22:39:40] [Server thread/INFO]: 35
+[22:39:43] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[22:39:43] [Server thread/INFO]: 45
+[22:39:44] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
+[22:39:44] [Server thread/INFO]: 55
+[22:39:53] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:39:53] [Server thread/INFO]: Skyspirit left the game
+[22:39:54] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:39:54] [Server thread/ERROR]: Cannot load plugins\MitainePlugin\config.yml
+org.bukkit.configuration.InvalidConfigurationException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 33, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:111) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:160) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:128) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(YamlConfiguration.java:309) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.reloadConfig(JavaPlugin.java:174) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.courrier.Courrier.onJoin(Courrier.java:30) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor6.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:git-Paper-401]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.20.4.jar:git-Paper-401]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[paper-1.20.4.jar:git-Paper-401]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:344) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:130) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.a(ServerboundFinishConfigurationPacket.java:9) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:54) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1455) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:194) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1432) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1355) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1333) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.yaml.snakeyaml.composer.ComposerException: Global tag is not allowed: tag:yaml.org,2002:java.util.UUID
+ in 'reader', line 33, column 17:
+          idSender: !!java.util.UUID '95f08a24-a484- ... 
+                    ^
+
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:231) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157) ~[snakeyaml-2.2.jar:?]
+	at org.yaml.snakeyaml.Yaml.compose(Yaml.java:575) ~[snakeyaml-2.2.jar:?]
+	at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:104) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	... 30 more
+[22:39:54] [Server thread/INFO]: Skyspirit joined the game
+[22:39:54] [Server thread/INFO]: Skyspirit[/127.0.0.1:62829] logged in with entity id 1191 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:40:33] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:40:33] [Server thread/INFO]: Skyspirit left the game
+[22:40:35] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:40:35] [Server thread/INFO]: Skyspirit joined the game
+[22:40:35] [Server thread/INFO]: Skyspirit[/127.0.0.1:62842] logged in with entity id 1257 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:40:49] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[22:40:49] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[22:40:49] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[22:40:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:40:49] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:40:49] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[22:40:49] [Server thread/INFO]: Au revoir
+[22:40:49] [Server thread/INFO]: Loaded 1174 recipes
+[22:40:49] [Server thread/INFO]: Loaded 1271 advancements
+[22:40:50] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[22:40:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:40:50] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[22:40:50] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[22:40:50] [Server thread/INFO]: Skyspirit: Reload complete.
+[22:40:50] [Server thread/INFO]: Timings Reset
+[22:40:51] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:40:51] [Server thread/INFO]: Skyspirit left the game
+[22:40:52] [User Authenticator #2/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:40:52] [Server thread/INFO]: Skyspirit joined the game
+[22:40:52] [Server thread/INFO]: Skyspirit[/127.0.0.1:62854] logged in with entity id 1273 at ([world]-51.96849309601461, 84.2080086656111, 34.33211909504852)
+[22:41:00] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit oui
+[22:41:15] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:41:19] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
+[22:41:19] [Server thread/INFO]: 56
+[22:41:21] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 6
+[22:41:21] [Server thread/INFO]: 66
+[22:41:24] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[22:41:24] [Server thread/INFO]: 46
+[22:41:25] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 0
+[22:41:25] [Server thread/INFO]: 06
+[22:41:27] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 7
+[22:41:27] [Server thread/INFO]: 76
+[22:41:32] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 6
+[22:41:32] [Server thread/INFO]: 66
+[22:42:27] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[22:42:32] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:43:02] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:43:12] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:43:13] [Server thread/INFO]: Skyspirit left the game
+[22:43:14] [User Authenticator #3/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:43:14] [Server thread/INFO]: Skyspirit joined the game
+[22:43:14] [Server thread/INFO]: Skyspirit[/127.0.0.1:62876] logged in with entity id 1483 at ([world]-51.96849309601461, 81.60250890383787, 34.33211909504852)
+[22:43:23] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:52:10] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer zefaz
+[22:52:10] [Server thread/ERROR]: null
 org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
@@ -48,29 +455,33 @@ org.bukkit.command.CommandException: Unhandled exception executing command 'cour
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.NumberFormatException: For input string: "Skyspirit"
+Caused by: java.lang.NumberFormatException: For input string: "zefaz"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
 	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
 	at java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
-	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:114) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:140) ~[mitaine-1.0-SNAPSHOT.jar:?]
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
 	... 29 more
-[01:15:06] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
-[01:15:06] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
-[01:15:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:15:06] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:15:06] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[01:15:06] [Server thread/INFO]: Au revoir
-[01:15:06] [Server thread/INFO]: Loaded 1174 recipes
-[01:15:06] [Server thread/INFO]: Loaded 1271 advancements
-[01:15:06] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
-[01:15:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[01:15:06] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
-[01:15:06] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
-[01:15:06] [Server thread/INFO]: CONSOLE: Reload complete.
-[01:15:06] [Server thread/INFO]: Timings Reset
-[01:15:09] [Server thread/INFO]: Skyspirit issued server command: /courrier lire Skyspirit
-[01:15:09] [Server thread/ERROR]: null
+[22:52:15] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 6
+[22:52:20] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[22:52:28] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[22:52:30] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 7
+[22:53:11] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[22:53:11] [Server thread/INFO]: Skyspirit left the game
+[22:53:12] [User Authenticator #4/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[22:53:12] [Server thread/INFO]: Skyspirit joined the game
+[22:53:12] [Server thread/INFO]: Skyspirit[/127.0.0.1:62935] logged in with entity id 2387 at ([world]-51.96849309601461, 80.85855549187583, 34.33211909504852)
+[22:54:11] [Server thread/INFO]: Skyspirit issued server command: /weather
+[22:54:21] [Server thread/INFO]: Skyspirit issued server command: /weather clm
+[22:54:25] [Server thread/INFO]: Skyspirit issued server command: /weather clear
+[22:54:25] [Server thread/INFO]: [Skyspirit: Set the weather to clear]
+[22:54:37] [Server thread/INFO]: Skyspirit issued server command: /give @a
+[22:54:40] [Server thread/INFO]: Skyspirit issued server command: /give Skyspirit
+[22:54:46] [Server thread/INFO]: Skyspirit issued server command: /give Skyspirit item
+[22:55:23] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer zerfazerfgaerg
+[22:55:25] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer zerfazerfgaerg fafgze
+[22:55:32] [Server thread/INFO]: Skyspirit issued server command: /courrier lire efzef
+[22:55:32] [Server thread/ERROR]: null
 org.bukkit.command.CommandException: Unhandled exception executing command 'courrier' in plugin MitainePlugin v1.0.0
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
 	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
@@ -102,40 +513,185 @@ org.bukkit.command.CommandException: Unhandled exception executing command 'cour
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1222) ~[paper-1.20.4.jar:git-Paper-401]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-401]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-Caused by: java.lang.NumberFormatException: For input string: "Skyspirit"
+Caused by: java.lang.NumberFormatException: For input string: "efzef"
 	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
 	at java.lang.Integer.parseInt(Integer.java:662) ~[?:?]
 	at java.lang.Integer.parseInt(Integer.java:778) ~[?:?]
-	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:114) ~[mitaine-1.0-SNAPSHOT.jar:?]
+	at io.papermc.mitaine.courrier.Courrier.onCommand(Courrier.java:118) ~[mitaine-1.0-SNAPSHOT.jar:?]
 	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
 	... 29 more
-[01:26:00] [Server thread/INFO]: Stopping the server
-[01:26:00] [Server thread/INFO]: Stopping server
-[01:26:00] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
-[01:26:00] [Server thread/INFO]: Au revoir
-[01:26:00] [Server thread/INFO]: Saving players
-[01:26:00] [Server thread/INFO]: Skyspirit lost connection: Server closed
-[01:26:00] [Server thread/INFO]: Skyspirit left the game
-[01:26:00] [Server thread/INFO]: Saving worlds
-[01:26:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saved 6 block chunks, 285 entity chunks, 0 poi chunks in world 'world' in 0,03s
-[01:26:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01:26:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 17 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
-[01:26:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01:26:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[01:26:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
-[01:26:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01:26:00] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[01:26:00] [Server thread/INFO]: Flushing Chunk IO
-[01:26:00] [Server thread/INFO]: Closing Thread Pool
-[01:26:00] [Server thread/INFO]: Closing Server
+[22:56:37] [Server thread/INFO]: Skyspirit issued server command: /creervote zefzef fzefze zefa
+[22:57:45] [Server thread/INFO]: Skyspirit issued server command: /resultats
+[23:04:21] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[23:04:21] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[23:04:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:04:21] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:04:21] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:04:21] [Server thread/INFO]: Au revoir
+[23:04:21] [Server thread/INFO]: Loaded 1174 recipes
+[23:04:21] [Server thread/INFO]: Loaded 1271 advancements
+[23:04:21] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[23:04:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:04:21] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[23:04:21] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[23:04:21] [Server thread/INFO]: CONSOLE: Reload complete.
+[23:04:21] [Server thread/INFO]: Timings Reset
+[23:04:25] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:04:25] [Server thread/INFO]: Skyspirit left the game
+[23:04:26] [User Authenticator #5/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:04:26] [Server thread/INFO]: Skyspirit joined the game
+[23:04:26] [Server thread/INFO]: Skyspirit[/127.0.0.1:63001] logged in with entity id 3549 at ([world]-64.40034032739247, 72.12538768240161, 21.656962205683964)
+[23:04:32] [Server thread/INFO]: Skyspirit issued server command: /creervote oui non nsp
+[23:04:36] [Server thread/INFO]: Skyspirit issued server command: /resultats
+[23:04:42] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 1
+[23:04:42] [Server thread/INFO]: 16
+[23:04:47] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:05:20] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:07:47] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:07:47] [Server thread/INFO]: Skyspirit left the game
+[23:07:48] [User Authenticator #6/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:07:48] [Server thread/INFO]: Skyspirit joined the game
+[23:07:48] [Server thread/INFO]: Skyspirit[/127.0.0.1:63027] logged in with entity id 3831 at ([world]-64.40034032739247, 70.0, 21.656962205683964)
+[23:07:51] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:08:03] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[23:08:03] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[23:08:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:08:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:08:03] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:08:03] [Server thread/INFO]: Au revoir
+[23:08:03] [Server thread/INFO]: Loaded 1174 recipes
+[23:08:03] [Server thread/INFO]: Loaded 1271 advancements
+[23:08:03] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[23:08:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:08:03] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[23:08:03] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[23:08:03] [Server thread/INFO]: CONSOLE: Reload complete.
+[23:08:03] [Server thread/INFO]: Timings Reset
+[23:08:10] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:08:13] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[23:08:13] [Server thread/INFO]: 46
+[23:08:20] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:08:35] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:08:35] [Server thread/INFO]: Skyspirit left the game
+[23:08:36] [User Authenticator #6/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:08:36] [Server thread/INFO]: Skyspirit joined the game
+[23:08:36] [Server thread/INFO]: Skyspirit[/127.0.0.1:63048] logged in with entity id 3899 at ([world]-64.40034032739247, 70.0, 21.656962205683964)
+[23:08:38] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:10:30] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:10:40] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:10:45] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[23:10:45] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[23:10:45] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[23:10:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:10:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:10:45] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:10:45] [Server thread/INFO]: Au revoir
+[23:10:45] [Server thread/INFO]: Loaded 1174 recipes
+[23:10:45] [Server thread/INFO]: Loaded 1271 advancements
+[23:10:45] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[23:10:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:10:45] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[23:10:45] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[23:10:45] [Server thread/INFO]: Skyspirit: Reload complete.
+[23:10:45] [Server thread/INFO]: Timings Reset
+[23:10:47] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:10:51] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:10:53] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:12:36] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:12:36] [Server thread/INFO]: Skyspirit left the game
+[23:12:37] [User Authenticator #7/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:12:37] [Server thread/INFO]: Skyspirit joined the game
+[23:12:37] [Server thread/INFO]: Skyspirit[/127.0.0.1:63066] logged in with entity id 4259 at ([world]-61.729945128409994, 70.0, 27.216589492230806)
+[23:12:52] [Server thread/INFO]: CONSOLE: Please note that this command is not supported and may cause issues when using some plugins.
+[23:12:52] [Server thread/INFO]: CONSOLE: If you encounter any issues please use the /stop command to restart your server.
+[23:12:52] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:12:52] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:12:52] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:12:52] [Server thread/INFO]: Au revoir
+[23:12:52] [Server thread/INFO]: Loaded 1174 recipes
+[23:12:52] [Server thread/INFO]: Loaded 1271 advancements
+[23:12:52] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[23:12:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:12:52] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[23:12:52] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[23:12:52] [Server thread/INFO]: CONSOLE: Reload complete.
+[23:12:52] [Server thread/INFO]: Timings Reset
+[23:12:56] [Server thread/INFO]: Skyspirit issued server command: /courri
+[23:12:59] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:13:03] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[23:13:03] [Server thread/INFO]: 46
+[23:13:06] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
+[23:13:06] [Server thread/INFO]: 56
+[23:13:09] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 6
+[23:13:09] [Server thread/INFO]: 66
+[23:13:14] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:13:18] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 4
+[23:13:18] [Server thread/INFO]: 45
+[23:13:24] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 5
+[23:13:24] [Server thread/INFO]: 55
+[23:14:14] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit oui
+[23:14:17] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:14:25] [Server thread/INFO]: Skyspirit issued server command: /courrier lire 6
+[23:14:25] [Server thread/INFO]: 66
+[23:14:31] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:15:07] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit haha
+[23:15:28] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:15:28] [Server thread/INFO]: Skyspirit left the game
+[23:15:29] [User Authenticator #8/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:15:29] [Server thread/INFO]: Skyspirit joined the game
+[23:15:29] [Server thread/INFO]: Skyspirit[/127.0.0.1:63090] logged in with entity id 4518 at ([world]-61.729945128409994, 70.0, 27.216589492230806)
+[23:15:33] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:15:39] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:16:41] [Server thread/INFO]: Skyspirit lost connection: Disconnected
+[23:16:41] [Server thread/INFO]: Skyspirit left the game
+[23:16:42] [User Authenticator #9/INFO]: UUID of player Skyspirit is 95f08a24-a484-4771-bf43-e3e2817b74f3
+[23:16:42] [Server thread/INFO]: Skyspirit joined the game
+[23:16:42] [Server thread/INFO]: Skyspirit[/127.0.0.1:63108] logged in with entity id 4629 at ([world]-61.729945128409994, 70.0, 27.216589492230806)
+[23:16:45] [Server thread/INFO]: Skyspirit issued server command: /rl confirm
+[23:16:45] [Server thread/INFO]: Skyspirit: Please note that this command is not supported and may cause issues when using some plugins.
+[23:16:45] [Server thread/INFO]: Skyspirit: If you encounter any issues please use the /stop command to restart your server.
+[23:16:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:16:45] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:16:45] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:16:45] [Server thread/INFO]: Au revoir
+[23:16:45] [Server thread/INFO]: Loaded 1174 recipes
+[23:16:45] [Server thread/INFO]: Loaded 1271 advancements
+[23:16:45] [Server thread/INFO]: [Mitaine] Loading server plugin MitainePlugin v1.0.0
+[23:16:45] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:16:45] [Server thread/INFO]: [Mitaine] Enabling MitainePlugin v1.0.0
+[23:16:45] [Server thread/INFO]: Merci d'utiliser Mitaine Economy
+[23:16:45] [Server thread/INFO]: Skyspirit: Reload complete.
+[23:16:45] [Server thread/INFO]: Timings Reset
+[23:16:53] [Server thread/INFO]: Skyspirit issued server command: /courrier envoyer Skyspirit test2
+[23:16:57] [Server thread/INFO]: Skyspirit issued server command: /courrier liste
+[23:17:05] [Server thread/INFO]: Skyspirit issued server command: /courrier supprimer 4
+[23:18:03] [Server thread/INFO]: Stopping the server
+[23:18:03] [Server thread/INFO]: Stopping server
+[23:18:03] [Server thread/INFO]: [Mitaine] Disabling MitainePlugin v1.0.0
+[23:18:03] [Server thread/INFO]: Au revoir
+[23:18:03] [Server thread/INFO]: Saving players
+[23:18:03] [Server thread/INFO]: Skyspirit lost connection: Server closed
+[23:18:03] [Server thread/INFO]: Skyspirit left the game
+[23:18:03] [Server thread/INFO]: Saving worlds
+[23:18:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:18:03] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[23:18:03] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[23:18:03] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Saved 157 block chunks, 283 entity chunks, 0 poi chunks in world 'world' in 0,16s
+[23:18:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:18:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 15 entity chunks, 0 poi chunks in world 'world_nether' in 0,00s
+[23:18:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:18:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[23:18:04] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0,00s
+[23:18:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:18:04] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:18:04] [Server thread/INFO]: Flushing Chunk IO
+[23:18:04] [Server thread/INFO]: Closing Thread Pool
+[23:18:04] [Server thread/INFO]: Closing Server
