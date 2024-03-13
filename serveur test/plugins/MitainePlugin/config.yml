@@ -4,10 +4,14 @@ normal: §f
 important: §6
 discret: §7
 valider: §2
+spawnPoint:
+  x: 28
+  y: 69
+  z: 102
 95f08a24-a484-4771-bf43-e3e2817b74f3:
   banque: 15
   courriers:
-    nombre: 5
+    nombre: 2
     '1':
       date: 05-03-2024 à 20:40:42
       sender: Skyspirit
@@ -18,28 +22,29 @@ valider: §2
       sender: Hybanos
       idSender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
       message: 'Je me OPENCL là '
-    '3':
-      date: 05-03-2024 à 20:40:42
-      sender: §f[§6Mitaine§f] §cAdmin§f
-      message: 'Hybanos vous a fait un virement de 15 diamants. '
-    '4':
-      date: 11-03-2024 à 23:15:07
-      sender: Hybanos
-      idSender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
-      message: 'haha '
-    '5':
-      date: 11-03-2024 à 23:16:53
-      sender: Skyspirit
-      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
-      message: 'test2 '
   teleports:
-    tp1:
-      name: base
-      x: 0
-      y: 100
-      z: 0
-    tp2:
-      name: home
+    home:
+      world: world
       x: 50
       y: 100
       z: 50
+    spawn:
+      world: world
+      x: 29
+      y: 69
+      z: 108
+    base:
+      world: world
+      x: 12
+      y: 64
+      z: 124
+    neth:
+      world: world_nether
+      x: -21
+      y: 59
+      z: 19
+    test:
+      world: world
+      x: 14
+      y: 64
+      z: 113

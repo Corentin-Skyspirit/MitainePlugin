@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:frozen_river": "2024-03-12 19:45:38 +0100",
       "minecraft:snowy_plains": "2024-02-27 22:11:38 +0100",
       "minecraft:dripstone_caves": "2024-03-07 22:58:48 +0100",
       "minecraft:plains": "2024-02-28 23:13:29 +0100"
@@ -138,6 +139,42 @@
       "in_water": "2024-03-07 22:58:43 +0100"
     },
     "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2024-03-12 20:50:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2024-03-12 20:50:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2024-03-12 20:50:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2024-03-12 20:51:20 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2024-03-12 20:51:20 +0100"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:basalt_deltas": "2024-03-12 20:51:21 +0100"
+    },
+    "done": false
   },
   "DataVersion": 3700
 }

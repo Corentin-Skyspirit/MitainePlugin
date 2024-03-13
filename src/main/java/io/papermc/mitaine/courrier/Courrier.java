@@ -40,11 +40,10 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, String[] args) {
 
         if (cmd.getName().equalsIgnoreCase("courrier")) {
-
+            FileConfiguration config = main.getConfig();
             if (args.length != 0) {
 
                 if (args[0].equalsIgnoreCase("envoyer")) {
-                    FileConfiguration config = main.getConfig();
                     if (args.length >= 3) {
                         StringBuilder contenu = new StringBuilder();
                         UUID reciever = Bukkit.getPlayerUniqueId(args[1]);
@@ -88,7 +87,6 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
 
                 } else if (args[0].equalsIgnoreCase("liste")) {
                     if (sender instanceof Player player) {
-                        FileConfiguration config = main.getConfig();
                         if (args.length == 1) {
                             UUID idPlayer = player.getUniqueId();
                             int nbMsg = config.getInt(idPlayer + ".courriers.nombre");
@@ -105,7 +103,6 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
 
                 } else if (args[0].equalsIgnoreCase("lire")) {
                     if (sender instanceof Player player) {
-                        FileConfiguration config = main.getConfig();
                         int nbMsg = config.getInt(player.getUniqueId() + ".courriers.nombre");
                         int entree = 0;
                         try {
@@ -113,7 +110,6 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         } catch (Exception e) {
                             player.sendMessage(config.getString("erreur") + "La commande est /courrier lire <nombre>");
                         }
-                        Bukkit.getLogger().info(entree + "" + nbMsg);
                         if (args.length == 2 && entree <= nbMsg && entree > 0) {
                             String enTete = player.getUniqueId() + ".courriers." + args[1];
                             player.sendMessage(config.getString("discret") + config.getString(enTete + ".date") + config.getString("normal") + " - " + config.getString("important") + config.getString(enTete + ".sender"));
@@ -127,7 +123,6 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
 
                 } else if (args[0].equalsIgnoreCase("supprimer")) {
                     if (sender instanceof Player player) {
-                        FileConfiguration config = main.getConfig();
                         int nbMsg = config.getInt(player.getUniqueId() + ".courriers.nombre");
                         int entree = 0;
                         try {
@@ -157,7 +152,7 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                 }
 
             } else {
-                sender.sendMessage(main.getConfig().getString("erreur") + "La commande est /courrier <option>");
+                sender.sendMessage(config.getString("erreur") + "La commande est /courrier <option>");
             }
         }
         return false;
