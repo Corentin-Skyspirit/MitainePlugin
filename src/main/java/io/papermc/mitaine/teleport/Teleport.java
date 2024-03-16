@@ -1,7 +1,9 @@
 package io.papermc.mitaine.teleport;
 
 import io.papermc.mitaine.MitaineMain;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -72,10 +74,12 @@ public class Teleport implements CommandExecutor {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 1) {
                     if (player.getWorld().getName().equalsIgnoreCase(config.getString(player.getUniqueId() + ".teleports." + args[0] + ".world"))) {
-                        player.teleport(new Location(player.getWorld(),
-                                config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".x"),
-                                config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".y"),
-                                config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".z")));
+                        int x = config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".x");
+                        int z = config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".z");
+                        player.teleport(new Location(player.getWorld(), x, config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".y"), z));
+                        double distance = distance(player.getLocation().getBlockX(), player.getLocation().getBlockZ(), x, z);
+                        Bukkit.getLogger().info(player.getLocation().getBlockX() + " " + player.getLocation().getBlockZ() + " " + x + " " + z);
+                        player.sendMessage("Vous étiez à " + config.getString("important") + distance + config.getString("normal") + " blocs du point");
                     } else if (config.getString(player.getUniqueId() + ".teleports." + args[0] + ".world") == null) {
                         player.sendMessage("Le point de téléportation \"" + config.getString("important") + args[0] + config.getString("normal") + "\" n'existe pas");
                     } else {
@@ -90,12 +94,7 @@ public class Teleport implements CommandExecutor {
         return false;
     }
 
-    private int calcDiamDistance(int xa, int za, int xb, int zb) {
-        double distance = sqrt(pow(xa - xb, 2) + pow(za - zb, 2));
-        return (int) round(sqrt(distance/50) + 1);
-    }
-
-    private void createPoint(String enTete, String world, int x, int y, int z) {
-        
+    private double distance(int xa, int za, int xb, int zb) {
+        return sqrt(pow(xa - xb, 2) + pow(za - zb, 2));
     }
 }

@@ -114,6 +114,23 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                             String enTete = player.getUniqueId() + ".courriers." + args[1];
                             player.sendMessage(config.getString("discret") + config.getString(enTete + ".date") + config.getString("normal") + " - " + config.getString("important") + config.getString(enTete + ".sender"));
                             player.sendMessage(Objects.requireNonNull(config.getString(enTete + ".message")));
+
+                            String idSender = config.getString(enTete + ".idSender");
+                            if (idSender != null) {
+                                String nombre = config.getString(config.getString(enTete + ".idSender") + ".courriers.nombre");
+                                nbMsg = 1;
+                                if (nombre != null) {
+                                    nbMsg += Integer.parseInt(nombre);
+                                }
+                                config.set(idSender + ".courriers.nombre", nbMsg);
+                                config.set(idSender + ".courriers." + nbMsg + ".date", LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy à HH:mm:ss")));
+                                config.set(idSender + ".courriers." + nbMsg + ".sender", config.getString("titre") + config.getString("important") + " Admin");
+                                config.set(idSender + ".courriers." + nbMsg + ".idSender", null);
+                                config.set(idSender + ".courriers." + nbMsg + ".message", "Le message envoyé à " + config.getString("important") + player.getName() + config.getString("normal") + " a bien été ouvert.");
+                                try {
+                                    Objects.requireNonNull(Bukkit.getPlayer(UUID.fromString(idSender))).sendMessage(config.getString("titre") + " Vous avez reçu un message !");
+                                } catch (NullPointerException ignored) {}
+                            }
                             // Faire un truc cliquable pour répondre / supprimer
                         } else {
                             player.sendMessage(config.getString("erreur") + "La commande est /courrier lire <nombre>");

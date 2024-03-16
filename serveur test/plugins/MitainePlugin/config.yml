@@ -8,10 +8,12 @@ spawnPoint:
   x: 28
   y: 69
   z: 102
+mairie:
+  banque: 0
 95f08a24-a484-4771-bf43-e3e2817b74f3:
   banque: 15
   courriers:
-    nombre: 2
+    nombre: 3
     '1':
       date: 05-03-2024 à 20:40:42
       sender: Skyspirit
@@ -22,6 +24,11 @@ spawnPoint:
       sender: Hybanos
       idSender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
       message: 'Je me OPENCL là '
+    '3':
+      date: 16-03-2024 à 00:59:44
+      sender: Skyspirit
+      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'test '
   teleports:
     home:
       world: world
@@ -33,11 +40,6 @@ spawnPoint:
       x: 29
       y: 69
       z: 108
-    base:
-      world: world
-      x: 12
-      y: 64
-      z: 124
     neth:
       world: world_nether
       x: -21
@@ -45,6 +47,6 @@ spawnPoint:
       z: 19
     test:
       world: world
-      x: 14
-      y: 64
-      z: 113
+      x: 35
+      y: 70
+      z: 94
