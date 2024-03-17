@@ -12,6 +12,9 @@ commands:
   achetericone:
     description: Définit un icone à l'endroit du joueur sur la dynmap
     permission: achetericone.use
+  leaderboard:
+    description: Afficher les plus riches du serveur
+    permission: leaderboard.use
   courrier:
     description: Permet une gestion des courriers
     permission: courrier.use

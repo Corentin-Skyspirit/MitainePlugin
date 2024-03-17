@@ -8,6 +8,10 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:frozen_river": "2024-03-12 19:45:38 +0100",
+      "minecraft:forest": "2024-03-17 14:28:51 +0100",
+      "minecraft:taiga": "2024-03-17 14:28:58 +0100",
+      "minecraft:river": "2024-03-17 14:28:00 +0100",
+      "minecraft:meadow": "2024-03-17 14:28:50 +0100",
       "minecraft:snowy_plains": "2024-02-27 22:11:38 +0100",
       "minecraft:dripstone_caves": "2024-03-07 22:58:48 +0100",
       "minecraft:plains": "2024-02-28 23:13:29 +0100"

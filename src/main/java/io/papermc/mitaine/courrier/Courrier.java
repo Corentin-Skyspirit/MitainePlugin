@@ -130,6 +130,8 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                                 try {
                                     Objects.requireNonNull(Bukkit.getPlayer(UUID.fromString(idSender))).sendMessage(config.getString("titre") + " Vous avez reçu un message !");
                                 } catch (NullPointerException ignored) {}
+                                config.set(enTete + ".idSender", null);
+                                main.saveConfig();
                             }
                             // Faire un truc cliquable pour répondre / supprimer
                         } else {
@@ -140,7 +142,9 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
 
                 } else if (args[0].equalsIgnoreCase("supprimer")) {
                     if (sender instanceof Player player) {
-                        int nbMsg = config.getInt(player.getUniqueId() + ".courriers.nombre");
+                        UUID pId = player.getUniqueId();
+
+                        int nbMsg = config.getInt(pId + ".courriers.nombre");
                         int entree = 0;
                         try {
                             entree = Integer.parseInt(args[1]);
@@ -149,13 +153,13 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
                         }
                         if (args.length == 2 && entree <= nbMsg && entree > 0) {
                             for (int i = entree; i <= nbMsg; i++) {
-                                config.set(player.getUniqueId() + ".courriers." + i + ".date", config.getString(player.getUniqueId() + ".courriers." + (i + 1) + ".date"));
-                                config.set(player.getUniqueId() + ".courriers." + i + ".sender", config.getString(player.getUniqueId() + ".courriers." + (i + 1) + ".sender"));
-                                config.set(player.getUniqueId() + ".courriers." + i + ".idSender", config.getString(player.getUniqueId() + ".courriers." + (i + 1) + ".idSender"));
-                                config.set(player.getUniqueId() + ".courriers." + i + ".message", config.getString(player.getUniqueId() + ".courriers." + (i + 1) + ".message"));
+                                config.set(pId + ".courriers." + i + ".date", config.getString(pId + ".courriers." + (i + 1) + ".date"));
+                                config.set(pId + ".courriers." + i + ".sender", config.getString(pId + ".courriers." + (i + 1) + ".sender"));
+                                config.set(pId + ".courriers." + i + ".idSender", config.getString(pId + ".courriers." + (i + 1) + ".idSender"));
+                                config.set(pId + ".courriers." + i + ".message", config.getString(pId + ".courriers." + (i + 1) + ".message"));
                             }
-                            config.set(player.getUniqueId() + ".courriers." + nbMsg, null);
-                            config.set(player.getUniqueId() + ".courriers.nombre", nbMsg - 1);
+                            config.set(pId + ".courriers." + nbMsg, null);
+                            config.set(pId + ".courriers.nombre", nbMsg - 1);
                             main.saveConfig();
                             player.sendMessage("Message Supprimé");
                             // Faire que le message supprimé réarange la liste

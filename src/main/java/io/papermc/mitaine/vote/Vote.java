@@ -49,13 +49,15 @@ public class Vote implements CommandExecutor, Listener {
 
         if (sender instanceof Player player) {
 
+            UUID pId = player.getUniqueId();
+
             if (cmd.getName().equalsIgnoreCase("creervote")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length > 1) {
                     votes.add(0);
                     for (String choix : args) {
                         nb_choix++;
-                        bc.append("- ").append(config.getString("important")).append(nb_choix).append(config.getString("normal")).append(" pour ").append(choix).append("\n");
+                        bc.append("- ").append(config.getString("important")).append(nb_choix).append(config.getString("normal")).append(" pour ").append(choix).append("\n"); // Ajouter voter cliquable
                         votes.add(0);
                     }
                     for (Player p : Bukkit.getOnlinePlayers()) {
@@ -71,7 +73,7 @@ public class Vote implements CommandExecutor, Listener {
 
             if (cmd.getName().equalsIgnoreCase("vote")) {
                 FileConfiguration config = main.getConfig();
-                if (args.length == 1 && !votants.contains(player.getUniqueId())) {
+                if (args.length == 1 && !votants.contains(pId)) {
                     if (nb_choix == 0) {
                         player.sendMessage(config.getString("titre") + " Il n'y a pas de vote en cours");
                     } else {
@@ -81,7 +83,7 @@ public class Vote implements CommandExecutor, Listener {
                                 player.sendMessage(config.getString("erreur") + " Vous devez rentrer un chiffre compris entre 1 et " + nb_choix);
                             } else {
                                 votes.set(choix, votes.get(choix) + 1);
-                                votants.add(player.getUniqueId());
+                                votants.add(pId);
                                 player.sendMessage(config.getString("titre") + " Merci, vous avez voté : " + config.getString("important") + choix);
                             }
                         } catch (NumberFormatException e) {
@@ -91,7 +93,7 @@ public class Vote implements CommandExecutor, Listener {
                 } else {
                     if (args.length != 1) {
                         player.sendMessage(config.getString("erreur") + " La commande est : /vote <choix>");
-                    } else if (votants.contains(player.getUniqueId())) {
+                    } else if (votants.contains(pId)) {
                         player.sendMessage(config.getString("titre") + " Vous ne pouvez pas voter plusieurs fois avec le même compte");
                     }
                 }

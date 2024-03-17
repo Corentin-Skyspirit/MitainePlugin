@@ -1,9 +1,7 @@
 package io.papermc.mitaine.teleport;
 
 import io.papermc.mitaine.MitaineMain;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import static java.lang.Math.*;
+import java.util.UUID;
 
 public class Teleport implements CommandExecutor {
     private final MitaineMain main;
@@ -28,10 +27,7 @@ public class Teleport implements CommandExecutor {
             if (cmd.getName().equalsIgnoreCase("setspawn")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 0) {
-                    config.set("spawnPoint.x", player.getLocation().getBlockX());
-                    config.set("spawnPoint.y", player.getLocation().getBlockY());
-                    config.set("spawnPoint.z", player.getLocation().getBlockZ());
-                    main.saveConfig();
+                    setTeleport(player, config, "spawnPoint");
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /setspawn");
                 }
@@ -41,11 +37,7 @@ public class Teleport implements CommandExecutor {
             if (cmd.getName().equalsIgnoreCase("spawn")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 0) {
-                    if (player.getWorld().getName().equalsIgnoreCase("world")) {
-                        player.teleport(new Location(player.getWorld(), config.getInt("spawnPoint.x"), config.getInt("spawnPoint.y"), config.getInt("spawnPoint.z")));
-                    } else {
-                        player.sendMessage(config.getString("erreur") + "La commande ne peut se faire que dans le monde normal (overworld)");
-                    }
+                    teleport(player, config, "spawnPoint");
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /spawn");
                 }
@@ -54,17 +46,7 @@ public class Teleport implements CommandExecutor {
             } else if (cmd.getName().equalsIgnoreCase("sethome")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 1) {
-                    if (config.getString(player.getUniqueId() + ".teleports." + args[0] + ".world") == null) {
-                        config.set(player.getUniqueId() + ".teleports." + args[0] + ".world", player.getWorld().getName());
-                        config.set(player.getUniqueId() + ".teleports." + args[0] + ".x", player.getLocation().getBlockX());
-                        config.set(player.getUniqueId() + ".teleports." + args[0] + ".y", player.getLocation().getBlockY());
-                        config.set(player.getUniqueId() + ".teleports." + args[0] + ".z", player.getLocation().getBlockZ());
-                        main.saveConfig();
-                        player.sendMessage("Le point de téléportation \"" + config.getString("important") + args[0] + config.getString("normal") + "\" a été défini");
-                    } else {
-                        player.sendMessage("Le point a déjà été défini");
-                        // Faire des trucs cliquables
-                    }
+                    setTeleport(player, config, player.getUniqueId() + ".teleports." + args[0]);
                 } else {
                     player.sendMessage(config.getString("erreur") + "Faites /sethome <nom>");
                 }
@@ -73,20 +55,9 @@ public class Teleport implements CommandExecutor {
             } else if (cmd.getName().equalsIgnoreCase("home")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 1) {
-                    if (player.getWorld().getName().equalsIgnoreCase(config.getString(player.getUniqueId() + ".teleports." + args[0] + ".world"))) {
-                        int x = config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".x");
-                        int z = config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".z");
-                        player.teleport(new Location(player.getWorld(), x, config.getInt(player.getUniqueId() + ".teleports." + args[0] + ".y"), z));
-                        double distance = distance(player.getLocation().getBlockX(), player.getLocation().getBlockZ(), x, z);
-                        Bukkit.getLogger().info(player.getLocation().getBlockX() + " " + player.getLocation().getBlockZ() + " " + x + " " + z);
-                        player.sendMessage("Vous étiez à " + config.getString("important") + distance + config.getString("normal") + " blocs du point");
-                    } else if (config.getString(player.getUniqueId() + ".teleports." + args[0] + ".world") == null) {
-                        player.sendMessage("Le point de téléportation \"" + config.getString("important") + args[0] + config.getString("normal") + "\" n'existe pas");
-                    } else {
-                        player.sendMessage("La commande ne peut se faire que dans le monde du point de téléportation");
-                    }
+                    teleport(player, config, player.getUniqueId() + ".teleports." + args[0]);
                 } else {
-                    player.sendMessage(config.getString("erreur") + "Faites /spawn");
+                    player.sendMessage(config.getString("erreur") + "Faites /home <nom>");
                 }
                 return true;
             }
@@ -94,7 +65,41 @@ public class Teleport implements CommandExecutor {
         return false;
     }
 
-    private double distance(int xa, int za, int xb, int zb) {
-        return sqrt(pow(xa - xb, 2) + pow(za - zb, 2));
+    private void teleport(Player player, FileConfiguration config, String emplacement) {
+        UUID pId = player.getUniqueId();
+
+        if (player.getWorld().getName().equalsIgnoreCase(config.getString(emplacement + ".world"))) {
+            double distance = sqrt(pow(player.getLocation().getBlockX() - config.getInt(emplacement + ".x"), 2) + pow(player.getLocation().getBlockZ() - config.getInt(emplacement + ".z"), 2));
+            int prix = (int) round(sqrt(distance) / 10 + 1);
+            player.sendMessage("Vous êtes à " + config.getString("important") + round(distance) + config.getString("normal") + " blocs du point, cela vous coûtera " + config.getString("important") + prix + config.getString("normal") + " diamants");
+            // Faire validation ?
+            if (config.getInt(pId + ".banque") >= prix) {
+                player.teleport(new Location(player.getWorld(), config.getInt(emplacement + ".x"), config.getInt(emplacement + ".y"), config.getInt(emplacement + ".z")));
+                config.set("mairie.banque", config.getInt("mairie.banque") + prix);
+                config.set(pId + ".banque", config.getInt(pId + ".banque") - prix);
+                main.saveConfig();
+                player.sendMessage("Vous avez bien été téléporté !");
+            } else {
+                player.sendMessage(config.getString("erreur") + "Vous n'avez pas assez de diamants en banque");
+            }
+        } else if (config.getString(emplacement + ".world") == null) {
+            player.sendMessage("Le point de téléportation n'existe pas");
+        } else {
+            player.sendMessage("La commande ne peut se faire que dans le monde du point de téléportation");
+        }
+    }
+
+    private void setTeleport(Player player, FileConfiguration config, String emplacement) {
+        if (config.getString(emplacement + ".world") == null) {
+            config.set(emplacement + ".world", player.getWorld().getName());
+            config.set(emplacement + ".x", player.getLocation().getBlockX());
+            config.set(emplacement + ".y", player.getLocation().getBlockY());
+            config.set(emplacement + ".z", player.getLocation().getBlockZ());
+            main.saveConfig();
+            player.sendMessage("Le point de téléportation a bien été défini");
+        } else {
+            player.sendMessage("Le point a déjà été défini");
+            // Faire des trucs cliquables -> redéfinition
+        }
     }
 }

@@ -9,6 +9,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.UUID;
+
 public class Economie implements CommandExecutor {
     private final MitaineMain main;
 
@@ -21,6 +23,7 @@ public class Economie implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
+            UUID pId = player.getUniqueId();
 
             if (cmd.getName().equalsIgnoreCase("economie")) {
 

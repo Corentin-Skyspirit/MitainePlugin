@@ -16,6 +16,7 @@ public final class MitaineMain extends JavaPlugin {
         Bukkit.getLogger().info("Merci d'utiliser Mitaine Economy");
         getCommand("economie").setExecutor(new Economie(this));
         getCommand("achetericone").setExecutor(new Economie(this));
+        getCommand("leaderboard").setExecutor(new Economie(this));
 
         getCommand("vote").setExecutor(new Vote(this));
         getCommand("creervote").setExecutor(new Vote(this));

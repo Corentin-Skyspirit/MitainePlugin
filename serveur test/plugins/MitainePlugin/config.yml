@@ -1,34 +1,40 @@
+# Textes pour l'affichage
 titre: §f[§3Mitaine§f]
 erreur: §c
 normal: §f
 important: §6
 discret: §7
 valider: §2
+
+# Point de spawn
 spawnPoint:
+  world: world
   x: 28
   y: 69
   z: 102
+
+# Infos de la Mairie
 mairie:
-  banque: 0
+  banque: 29
+
+# Les Joueurs et leur data
 95f08a24-a484-4771-bf43-e3e2817b74f3:
-  banque: 15
+  banque: 6
   courriers:
     nombre: 3
     '1':
       date: 05-03-2024 à 20:40:42
-      sender: Skyspirit
-      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
-      message: 'Ouais salut ça va '
-    '2':
-      date: 05-03-2024 à 20:40:42
       sender: Hybanos
-      idSender: b4ecab1e-2a3e-40f7-a415-56c6f3b4a317
       message: 'Je me OPENCL là '
-    '3':
+    '2':
       date: 16-03-2024 à 00:59:44
       sender: Skyspirit
-      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
       message: 'test '
+      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+    '3':
+      date: 17-03-2024 à 23:26:43
+      sender: §f[§3Mitaine§f]§6 Admin
+      message: Le message envoyé à §6Skyspirit§f a bien été ouvert.
   teleports:
     home:
       world: world
@@ -50,3 +56,25 @@ mairie:
       x: 35
       y: 70
       z: 94
+    loin:
+      world: world
+      x: -227
+      y: 68
+      z: 132
+    village:
+      world: world
+      x: 55
+      y: 69
+      z: 132
+b4ecab1e-2a3e-40f7-a415-56c6f3b4a317:
+  courriers:
+    nombre: 3
+    '1':
+      date: 17-03-2024 à 23:16:32
+      sender: §f[§3Mitaine§f]§6 Admin
+      message: Le message envoyé à §6Skyspirit§f a bien été ouvert.
+    '2':
+      date: 17-03-2024 à 23:17:41
+      sender: Skyspirit
+      idSender: 95f08a24-a484-4771-bf43-e3e2817b74f3
+      message: 'test '
