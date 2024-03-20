@@ -5,7 +5,10 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,35 +21,63 @@ public class Economie implements CommandExecutor {
         this.main = mitaineMain;
     }
 
+    @EventHandler
+    public void onJoin(PlayerJoinEvent join) {
+        Player player = join.getPlayer();
+        main.reloadConfig();
+        FileConfiguration config = main.getConfig();
+        if (config.getString(player.getUniqueId() + ".banque") != null) {
+            config.set(player.getUniqueId() + ".banque", 0);
+            main.saveConfig();
+        }
+    }
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, String[] args) {
 
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
+            FileConfiguration config = main.getConfig();
             UUID pId = player.getUniqueId();
 
             if (cmd.getName().equalsIgnoreCase("economie")) {
-
                 if (args.length != 0) {
 
                     if (args[0].equalsIgnoreCase("banque")) {
-                        player.sendMessage(main.getConfig().getString("titre") + " Vous avez " + main.getConfig().getString("important") + 64 + main.getConfig().getString("normal") + " diamants en banque.");
+                        player.sendMessage(config.getString("titre") + " Vous avez " + config.getString("important") + config.getInt(pId + ".banque") + config.getString("normal") + " diamants en banque.");
                         return true;
-                    }
 
-                    if (args[0].equalsIgnoreCase("retirer")) {
+                    } else if (args[0].equalsIgnoreCase("retirer")) {
                         if (args.length != 2) {
-                            player.sendMessage(main.getConfig().getString("erreur") + "la commande est /economie retirer <chiffre>");
+                            player.sendMessage(config.getString("erreur") + "la commande est /economie retirer <chiffre>");
                         }
-                        //faire le test des diamants dispos
                         else if (player.getInventory().firstEmpty() == -1) {
-                            player.sendMessage(main.getConfig().getString("erreur") + "vous n'avez plus de place dans votre inventaire");
+                            //faire le test des diamants dispos
+                            player.sendMessage(config.getString("erreur") + "vous n'avez plus de place dans votre inventaire");
                         } else {
                             try {
-                                int nb = Integer.parseInt(args[1]); //pas clair qu'on sache si c'est un chiffre
+                                int nb = Integer.parseInt(args[1]); //test si c'est un chiffre
                                 player.getInventory().addItem(new ItemStack(Material.DIAMOND, nb));
+                                config.set(pId + ".banque", config.getInt(pId + ".banque") - nb);
+                                main.saveConfig();
                             } catch (NumberFormatException e) {
-                                player.sendMessage(main.getConfig().getString("erreur") + "vous devez entrer un chiffre en paramètre");
+                                player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
+                            }
+                        }
+                        return true;
+
+                    } else if (args[0].equalsIgnoreCase("donner")) {
+                        if (args.length != 2) {
+                            player.sendMessage(config.getString("erreur") + "la commande est /economie donner <chiffre>");
+                        } else {
+                            try {
+                                int nb = Integer.parseInt(args[1]); //test si c'est un chiffre
+                                if (player.getInventory().contains(new ItemStack(Material.DIAMOND, nb))) {
+                                    player.getInventory().remove(new ItemStack(Material.DIAMOND, nb));
+                                    config.set(pId + ".banque", config.getInt(pId + ".banque") + nb);
+                                    main.saveConfig();
+                                }
+                            } catch (NumberFormatException e) {
+                                player.sendMessage(config.getString("erreur") + "vous devez entrer un chiffre en paramètre");
                             }
                         }
                         return true;

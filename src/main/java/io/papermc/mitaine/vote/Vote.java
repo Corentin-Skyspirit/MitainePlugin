@@ -69,9 +69,8 @@ public class Vote implements CommandExecutor, Listener {
                     player.sendMessage(config.getString("erreur") + " La commande est : /creervote <choix 1> ... <choix n>");
                 }
                 return true;
-            }
 
-            if (cmd.getName().equalsIgnoreCase("vote")) {
+            } else if (cmd.getName().equalsIgnoreCase("vote")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 1 && !votants.contains(pId)) {
                     if (nb_choix == 0) {
@@ -98,9 +97,8 @@ public class Vote implements CommandExecutor, Listener {
                     }
                 }
                 return true;
-            }
 
-            if (cmd.getName().equalsIgnoreCase("resultats")) {
+            } else if (cmd.getName().equalsIgnoreCase("resultats")) {
                 FileConfiguration config = main.getConfig();
                 if (nb_choix == 0) {
                     player.sendMessage(config.getString("titre") + " Il n'y a pas de vote pour le moment");

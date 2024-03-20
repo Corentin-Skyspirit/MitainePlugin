@@ -29,11 +29,12 @@ public class Courrier implements CommandExecutor, Listener, TabCompleter {
         Player player = join.getPlayer();
         main.reloadConfig();
         FileConfiguration config = main.getConfig();
-        String nombre = config.getString(player + ".courriers.nombre");
+        String nombre = config.getString(player.getUniqueId() + ".courriers.nombre");
         if (nombre != null) {
-            config.set(player + ".courriers.nombre", 0);
+            config.set(player.getUniqueId() + ".courriers.nombre", 0);
+            main.saveConfig();
         }
-        player.sendMessage("Vous avez " + config.getString("important") + config.getString(player.getUniqueId() + ".courriers.nombre") + config.getString("normal") + " courriers en attente");
+        player.sendMessage("Vous avez " + config.getString("important") + nombre + config.getString("normal") + " courriers en attente");
     }
 
     @Override

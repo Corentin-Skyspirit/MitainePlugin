@@ -32,9 +32,8 @@ public class Teleport implements CommandExecutor {
                     player.sendMessage(config.getString("erreur") + "Faites /setspawn");
                 }
                 return true;
-            }
 
-            if (cmd.getName().equalsIgnoreCase("spawn")) {
+            } else if (cmd.getName().equalsIgnoreCase("spawn")) {
                 FileConfiguration config = main.getConfig();
                 if (args.length == 0) {
                     teleport(player, config, "spawnPoint");
